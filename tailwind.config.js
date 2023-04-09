@@ -1,15 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
   theme: {
     fontFamily: {
-      body: ['Poppins', 'sans-serif'],
-      code: ['source-code-pro', 'Menlo', 'Monaco', 'Consolas', `'Courier New'`, 'monospace'],
-      mono: ['ui-monospace', 'SFMono-Regular', 'monospace'],
+      body: ['Poppins', 'Arial', 'sans-serif'],
     },
     extend: {
       screens: {
@@ -35,6 +30,14 @@ module.exports = {
         'body-sm': 'calc(100vw - 2rem)',
       },
       colors: {
+        darkgrey: '#231f20',
+        palegrey: '#f1f1f2',
+        pink: '#ff89fe',
+        yellow: '#fff170',
+        darkblue: '#1c2434',
+        lightblue: '#00c8ba',
+        white: '#ffffff',
+
         'bg-var-dk': '#000000',
         'bg-dk': '#1f1f1f',
         'deco-dk': '#3d3d3d',
@@ -57,4 +60,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
