@@ -30,13 +30,15 @@ module.exports = {
         'body-sm': 'calc(100vw - 2rem)',
       },
       colors: {
-        darkgrey: '#231f20',
         palegrey: '#f1f1f2',
         pink: '#ff89fe',
         yellow: '#fff170',
         darkblue: '#1c2434',
         lightblue: '#00c8ba',
         white: '#ffffff',
+
+        'darkblue-bgvar': '#141a25',
+        'darkblue-bg': '#1e2738',
 
         'bg-var-dk': '#000000',
         'bg-dk': '#1f1f1f',
@@ -51,8 +53,8 @@ module.exports = {
         'txt-low': '#636363',
         border: '#919191',
         deco: '#e0e0e0',
-        'bg-var': '#fafafa',
-        bg: '#ffffff',
+        'bg-var': colors.palegrey,
+        bg: colors.white,
       },
       boxShadow: {
         bottom: '1px 3px 0px -2px rgba(0, 0, 0, 1)',

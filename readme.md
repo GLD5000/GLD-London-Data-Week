@@ -21,8 +21,8 @@
 
 1. replace names:
 
-- <title>GLD Minimal Template</title> (in index.html)
-- "name": "gld-minimal-template" (in package.json & 2 x in package-lock.json)
+- <title>LDW GLD</title> (in index.html)
+- "name": "ldw-gld" (in package.json & 2 x in package-lock.json)
 
 2. Add a favicon to index.html
 
