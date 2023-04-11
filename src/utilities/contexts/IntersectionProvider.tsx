@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext, Dispatch, useState, SetStateAction } from 'react';
+import { createContext, type ReactNode, useContext, type Dispatch, useState, type SetStateAction } from 'react';
 
 export interface ProviderState {
   currentSection: string;
@@ -11,10 +11,6 @@ export interface ProviderContext extends ProviderState {
 const initialiserContext: ProviderContext = {
   currentSection: 'hero-section',
   setcurrentSection: () => undefined,
-};
-
-const initialiserState: ProviderState = {
-  currentSection: 'hero-section',
 };
 
 function useData() {

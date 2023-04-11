@@ -15,7 +15,7 @@ export default function ExternalLink({
   layoutClasses?: string | undefined;
 }) {
   return (
-    <a className={`${mediaVisibility} ${layoutClasses} ${colourClasses}`} href={link} >
+    <a className={`${mediaVisibility} ${layoutClasses} ${colourClasses}`} href={link}>
       {content}
     </a>
   );

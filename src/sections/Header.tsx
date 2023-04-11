@@ -11,7 +11,7 @@ export default function Header({
   toggleColourTheme: () => void;
   colourTheme: boolean;
 }) {
-  const {currentSection} = useIntersectionProviderContext();
+  const { currentSection } = useIntersectionProviderContext();
   console.log('currentSection:', currentSection);
   const [showMenu, setShowMenu] = useState(false);
 

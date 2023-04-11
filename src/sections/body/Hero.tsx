@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import FullLogoWhiteColour from '../../assets/FullLogoWhiteColour';
 import GroupLogoWhite from '../../assets/GroupLogoWhite';
 import DownArrowSvg from '../../icons/DownArrowSvg';
@@ -5,6 +6,19 @@ import useIntersectionObserver from '../../utilities/hooks/useIntersectionObserv
 
 export default function Hero() {
   const { elementRef, onScreen } = useIntersectionObserver();
+
+  useEffect(() => {
+    let run = true;
+
+    if (run && onScreen) {
+      console.log('onScreen:', onScreen);
+    }
+
+    return () => {
+      run = false;
+    };
+  }, [onScreen]);
+
   return (
     <section id="hero-section" ref={elementRef} className="w-full min-h-screen items-center p-4">
       <div className="h-fit grid gap-20">

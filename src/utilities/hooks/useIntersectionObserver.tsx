@@ -1,27 +1,27 @@
 import { useEffect, useRef, useState } from 'react';
 
 export default function useIntersectionObserver(
-  options?
-:  Partial<{ root: null | Element; rootMargin: string; threshold: number | number[] }>
+  options?: Partial<{ root: null | Element; rootMargin: string; threshold: number | number[] }>,
 ) {
   const elementRef = useRef(null);
   const [onScreen, setOnScreen] = useState(false);
 
-  function callback(entries: Array<IntersectionObserverEntry>) {
+  function callback(entries: IntersectionObserverEntry[]) {
     const [entry] = entries;
     setOnScreen(entry.isIntersecting);
   }
 
   useEffect(() => {
+    const { current } = elementRef;
     const observer = new IntersectionObserver(callback, options);
-    if (elementRef.current) observer.observe(elementRef.current);
+    if (current !== null) observer.observe(current);
 
     return () => {
-      if (elementRef.current) observer.unobserve(elementRef.current);
+      if (current !== null) observer.unobserve(current);
     };
-  }, [elementRef, onScreen]);
+  }, [elementRef, onScreen, options]);
 
-  return {elementRef, onScreen};
+  return { elementRef, onScreen };
 }
 
 useIntersectionObserver.defaultProps = {
