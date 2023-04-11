@@ -27,7 +27,12 @@ export default function Hero() {
         <div className=" ml-auto w-3/5">
           <GroupLogoWhite />
         </div>
-        <a className="h-12 w-12 sm:h-20 sm:w-20 m-auto text-pink" href="#about-section">
+        <a
+          className="h-12 w-12 sm:h-20 sm:w-20 m-auto text-pink"
+          href="#about-section"
+          aria-label="scroll down"
+          id="scroll-down"
+        >
           <DownArrowSvg />
         </a>
       </div>
