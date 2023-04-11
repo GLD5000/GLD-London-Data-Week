@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 export default function useIntersectionObserver(
   options?: Partial<{ root: null | Element; rootMargin: string; threshold: number | number[] }>,
 ) {
-  const elementRef = useRef(null);
+  const elementRef = useRef<HTMLDivElement>(null);
   const [onScreen, setOnScreen] = useState(false);
 
   function callback(entries: IntersectionObserverEntry[]) {
