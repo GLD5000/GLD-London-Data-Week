@@ -20,7 +20,7 @@ export default function Hero() {
 
   return (
     <section id="about-section" ref={elementRef} className="relative min-h-screen scroll-m-32 sm:scroll-m-16 px-20">
-      <div className=" bg-lightblue text-black w-fit p-12 mt-20 mr-auto">
+      <div className=" bg-lightblue text-black w-fit py-12 px-20 mt-20 mr-auto">
         <p className=" text-6xl mb-4 mx-auto w-fit font-bold">July 3-9</p>
         <p className=" text-xl mr-auto w-fit">Join us for a free, city-wide</p>
         <p className=" text-xl mr-auto w-fit">festival of data for everyone</p>
