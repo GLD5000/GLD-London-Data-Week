@@ -41,6 +41,8 @@ export default function Schedule() {
       <h2 className="text-4xl font-bold w-fit mx-auto">LDW 2023 Schedule</h2>
       <div className="flex flex-row  py-10 border-4 mt-20">
         <button
+          aria-label="scroll-left"
+          id="scroll-left"
           type="button"
           className="p-2"
           onClick={() => {
@@ -48,7 +50,6 @@ export default function Schedule() {
           }}
         >
           <LeftArrowSvg />
-          Left
         </button>
         <div
           ref={scrollRef}
@@ -65,6 +66,8 @@ export default function Schedule() {
           <EventCard />
         </div>
         <button
+          aria-label="scroll-right"
+          id="scroll-right"
           type="button"
           className="p-2"
           onClick={() => {
@@ -72,7 +75,6 @@ export default function Schedule() {
           }}
         >
           <RightArrowSvg />
-          Right
         </button>
       </div>
     </section>
