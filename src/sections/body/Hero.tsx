@@ -21,7 +21,7 @@ export default function Hero() {
   }, [onScreen, elementRef, setcurrentSection]);
 
   return (
-    <section id="hero-section" ref={elementRef} className="w-full min-h-screen items-center p-4">
+    <section id="hero-section" ref={elementRef} className="w-full min-h-screen items-center p-4 snap-start scroll-m-32">
       <div className="h-fit grid gap-20">
         <FullLogoWhiteColour />
         <div className=" ml-auto w-3/5">
