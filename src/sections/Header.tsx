@@ -2,6 +2,7 @@ import { useState } from 'react';
 import HamburgerMenu from './header/HamburgerMenu';
 import NavBar from './header/NavBar';
 import FullLogoWhiteColour from '../assets/FullLogoWhiteColour';
+import { useIntersectionProviderContext } from '../utilities/contexts/IntersectionProvider';
 
 export default function Header({
   toggleColourTheme,
@@ -10,7 +11,10 @@ export default function Header({
   toggleColourTheme: () => void;
   colourTheme: boolean;
 }) {
+  const {currentSection} = useIntersectionProviderContext();
+  console.log('currentSection:', currentSection);
   const [showMenu, setShowMenu] = useState(false);
+
   function toggleShowMenu() {
     setShowMenu((state) => !state);
   }

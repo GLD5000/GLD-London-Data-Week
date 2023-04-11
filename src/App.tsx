@@ -3,6 +3,7 @@ import Header from './sections/Header';
 import Body from './sections/Body';
 import Footer from './sections/Footer';
 import MainContentLink from './sections/header/MainContentLink';
+import IntersectionProvider from './utilities/contexts/IntersectionProvider';
 
 function setThemeToLocalStorage(themeBoolean: boolean) {
   localStorage.setItem('theme', themeBoolean.toString());
@@ -19,9 +20,11 @@ function App() {
     <div id="theme-wrapper" className={colourTheme ? 'dark' : undefined}>
       <div className=" relative flex h-screen flex-col overflow-x-hidden overflow-y-scroll scroll-smooth border-border bg-bg text-txt-main dark:border-border-dk dark:bg-bg-dk dark:text-txt-main-dk ">
         <MainContentLink />
-        <Header toggleColourTheme={toggleColourTheme} colourTheme={colourTheme} />
-        <Body />
-        <Footer />
+        <IntersectionProvider>
+          <Header toggleColourTheme={toggleColourTheme} colourTheme={colourTheme} />
+          <Body />
+          <Footer />
+        </IntersectionProvider>
       </div>
     </div>
   );
