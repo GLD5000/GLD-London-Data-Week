@@ -4,7 +4,7 @@ import useIntersectionObserver from '../../utilities/hooks/useIntersectionObserv
 export default function Contact() {
   const { elementRef, onScreen } = useIntersectionObserver();
 
-  useEffect
+  useEffect;
 
   return (
     <section id="contact-section" ref={elementRef} className="min-h-screen scroll-m-16">
