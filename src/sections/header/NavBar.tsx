@@ -24,7 +24,7 @@ export default function NavBar({
         mediaVisibility="hidden sm:flex"
         link="#about-section"
         content={[
-          <p key="text" className="m-0 hidden md:inline">
+          <p key="text" className="m-0 hidden sm:inline">
             ABOUT
           </p>,
         ]}
@@ -33,7 +33,7 @@ export default function NavBar({
         mediaVisibility="hidden sm:flex"
         link="#schedule-section"
         content={[
-          <p key="text" className="m-0 hidden md:inline">
+          <p key="text" className="m-0 hidden sm:inline">
             SCHEDULE
           </p>,
         ]}
@@ -42,7 +42,7 @@ export default function NavBar({
         mediaVisibility="hidden sm:flex"
         link="#contact-section"
         content={[
-          <p key="text" className="m-0 hidden md:inline">
+          <p key="text" className="m-0 hidden sm:inline">
             CONTACT
           </p>,
         ]}
