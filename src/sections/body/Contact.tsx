@@ -18,8 +18,54 @@ export default function Contact() {
   }, [onScreen, elementRef, setcurrentSection]);
 
   return (
-    <section id="contact-section" ref={elementRef} className="min-h-screen scroll-m-32 sm:scroll-m-16">
-      Contact
+    <section
+      id="contact-section"
+      ref={elementRef}
+      className="flex flex-col gap-10 min-h-screen scroll-m-32 sm:scroll-m-16"
+    >
+      <h2 className="text-4xl font-bold w-fit mx-auto">Get in Touch</h2>
+      <div className=" bg-lightblue flex text-black w-full p-4 h-32  mr-auto font-bold">
+        <p className=" text-2xl m-auto w-fit">To propose an event, submit your idea by 15 May 2023</p>
+      </div>
+      <div className=" bg-pink flex text-black w-full p-4 h-32  mr-auto font-bold">
+        <p className=" text-2xl m-auto w-fit">
+          For any other questions, email us at londondataweek@gmail.com or fill out the form below!
+        </p>
+      </div>
+
+      <input
+        id="name-input"
+        aria-label="name"
+        className=" h-16 w-full border-transparent border-2 border-b-border p-2 bg-transparent text-xl"
+        type="text"
+        placeholder="Name"
+        autoComplete="off"
+      />
+      <input
+        id="email-input"
+        aria-label="email"
+        className=" h-16 w-full border-transparent border-2 border-b-border p-2 bg-transparent text-xl"
+        type="text"
+        placeholder="Email"
+        autoComplete="off"
+      />
+
+      <form className="flex flex-col">
+        <textarea
+          id="message-input"
+          aria-label="message"
+          className=" w-full border-transparent border-2 border-b-border p-2 bg-transparent text-xl resize-y"
+          placeholder="Message"
+          rows={7}
+          wrap="hard"
+        />
+        <button
+          className="mt-8 border-border border-2 rounded-lg w-fit h-fit text-xl mx-auto px-4 py-2 font-bold"
+          type="button"
+        >
+          Submit
+        </button>
+      </form>
     </section>
   );
 }
