@@ -66,6 +66,9 @@ module.exports = {
       boxShadow: {
         bottom: '1px 3px 0px -2px rgba(0, 0, 0, 1)',
       },
+      strokeWidth: {
+        '4': '4px',
+      }
     },
   },
   plugins: [],
