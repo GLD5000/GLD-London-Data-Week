@@ -1,7 +1,7 @@
 export default function FullLogoWhiteColour() {
   return (
 <svg version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px"
-	 viewBox="150 100 984 310"  >
+	 viewBox="181 104 862 298"  >
 <g>
 	<g>
 		<rect x="717.5" y="367.7" className="fill-st0" width="31.7" height="32.2"/>
