@@ -3,11 +3,14 @@ import GroupLogoWhite from "../../assets/GroupLogoWhite";
 
 export default function Hero() {
   return (
-    <section id="hero-section" className="w-full">
+    <section id="hero-section" className="w-full min-h-screen items-center bg-darkblue">
+        <div className="h-fit grid gap-8">
+
         <FullLogoWhiteColour/>
         <div className=" ml-auto w-3/5">
 
         <GroupLogoWhite/>
+        </div>
         </div>
     </section>
   )

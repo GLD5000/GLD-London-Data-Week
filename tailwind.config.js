@@ -61,7 +61,7 @@ module.exports = {
         border: '#919191',
         deco: '#e0e0e0',
         'bg-var': '#f1f1f2',
-        bg: 'ffffff',
+        'bg': '#ffffff',
       },
       boxShadow: {
         bottom: '1px 3px 0px -2px rgba(0, 0, 0, 1)',
