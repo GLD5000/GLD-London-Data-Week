@@ -30,6 +30,8 @@ module.exports = {
         'body-sm': 'calc(100vw - 2rem)',
       },
       colors: {
+        semiWhite: '#ffffff99',
+
         palegrey: '#f1f1f2',
         pink: '#ff89fe',
         yellow: '#fff170',
@@ -61,14 +63,14 @@ module.exports = {
         border: '#919191',
         deco: '#e0e0e0',
         'bg-var': '#f1f1f2',
-        'bg': '#ffffff',
+        bg: '#ffffff',
       },
       boxShadow: {
         bottom: '1px 3px 0px -2px rgba(0, 0, 0, 1)',
       },
       strokeWidth: {
-        '4': '4px',
-      }
+        4: '4px',
+      },
     },
   },
   plugins: [],

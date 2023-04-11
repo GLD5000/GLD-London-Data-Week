@@ -36,11 +36,11 @@ export default function Hero() {
       </div>
       <p className="w-fit mx-auto text-2xl mt-10">#LDW2023</p>
 
-      <div className=" -left-[3%] top-[27%] h-4 w-4 absolute bg-yellow hover:scale-150 hover:transition " />
-      <div className=" left-[55%] top-[25%] h-5 w-5 absolute bg-lightblue hover:scale-150 hover:transition " />
-      <div className=" left-[5%] top-[65%] h-6 w-6 absolute bg-pink hover:scale-150 hover:transition " />
-      <div className=" left-[15%] top-[64%] h-5 w-5 absolute bg-lightblue hover:scale-150 hover:transition " />
-      <div className=" left-[75%] top-[62%] h-4 w-4 absolute bg-pink hover:scale-150 hover:transition " />
+      <div className=" -left-[3%] top-[27%] h-4 w-4 absolute bg-yellow hover:scale-150 hover:transition -z-5 " />
+      <div className=" left-[85%] top-[25%] h-5 w-5 absolute bg-lightblue hover:scale-150 hover:transition -z-5 " />
+      <div className=" left-[5%] top-[65%] h-6 w-6 absolute bg-pink hover:scale-150 hover:transition -z-5 " />
+      <div className=" left-[15%] top-[64%] h-5 w-5 absolute bg-lightblue hover:scale-150 hover:transition -z-5 " />
+      <div className=" left-[75%] top-[62%] h-4 w-4 absolute bg-pink hover:scale-150 hover:transition -z-5 " />
     </section>
   );
 }

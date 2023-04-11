@@ -1,5 +1,5 @@
 module.exports = {
-  ignorePatterns: ['vite-env.d.ts'],
+  ignorePatterns: ['vite-env.d.ts', 'tailwind.config.js'],
   env: {
     browser: true,
     es2021: true,
