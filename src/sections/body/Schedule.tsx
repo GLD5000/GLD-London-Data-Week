@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react';
 import useIntersectionObserver from '../../utilities/hooks/useIntersectionObserver';
 import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
 import EventCard from './EventCard';
+import RightArrowSvg from '../../icons/RightArrowSvg';
+import LeftArrowSvg from '../../icons/LeftArrowSvg';
 
 export default function Schedule() {
   const { elementRef, onScreen } = useIntersectionObserver();
@@ -33,14 +35,16 @@ export default function Schedule() {
   return (
     <section id="schedule-section" ref={elementRef} className="min-h-screen scroll-m-32 sm:scroll-m-16 mt-20">
       <h2 className="text-4xl font-bold w-fit mx-auto">LDW 2023 Schedule</h2>
-      <div className="flex flex-row  py-10 px-8 border-4 mt-20">
+      <div className="flex flex-row  py-10 border-4 mt-20">
         <button
           type="button"
+          className="p-2"
           onClick={() => {
             scrollLeft();
           }}
         >
-          left
+          <LeftArrowSvg />
+          Left
         </button>
         <div
           ref={scrollRef}
@@ -58,11 +62,13 @@ export default function Schedule() {
         </div>
         <button
           type="button"
+          className="p-2"
           onClick={() => {
             scrollRight();
           }}
         >
-          right
+          <RightArrowSvg />
+          Right
         </button>
       </div>
     </section>
