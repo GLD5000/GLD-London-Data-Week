@@ -19,8 +19,28 @@ export default function Hero() {
   }, [onScreen, elementRef, setcurrentSection]);
 
   return (
-    <section id="about-section" ref={elementRef} className="min-h-screen scroll-m-32 sm:scroll-m-16">
-      About
+    <section id="about-section" ref={elementRef} className="relative min-h-screen scroll-m-32 sm:scroll-m-16 px-20">
+      <div className=" bg-lightblue text-black w-fit p-12 mt-20 mr-auto">
+        <p className=" text-6xl mb-4 mx-auto w-fit font-bold">July 3-9</p>
+        <p className=" text-xl mr-auto w-fit">Join us for a free, city-wide</p>
+        <p className=" text-xl mr-auto w-fit">festival of data for everyone</p>
+      </div>
+      <div className="text-6xl">
+        <p className="w-fit mx-auto mt-10">
+          <span className=" text-lightblue font-bold">Data</span> in the{' '}
+          <span className=" text-lightblue font-bold">public</span>,
+        </p>
+        <p className="w-fit mx-auto">
+          for the <span className=" text-lightblue font-bold">public</span>.
+        </p>
+      </div>
+      <p className="w-fit mx-auto text-2xl mt-10">#LDW2023</p>
+
+      <div className=" -left-[3%] top-[27%] h-4 w-4 absolute bg-yellow hover:scale-150 hover:transition " />
+      <div className=" left-[55%] top-[25%] h-5 w-5 absolute bg-lightblue hover:scale-150 hover:transition " />
+      <div className=" left-[5%] top-[65%] h-6 w-6 absolute bg-pink hover:scale-150 hover:transition " />
+      <div className=" left-[15%] top-[64%] h-5 w-5 absolute bg-lightblue hover:scale-150 hover:transition " />
+      <div className=" left-[75%] top-[62%] h-4 w-4 absolute bg-pink hover:scale-150 hover:transition " />
     </section>
   );
 }
