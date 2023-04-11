@@ -17,7 +17,7 @@ export default function Header({
   return (
     <header
       id="top"
-      className="absolute top-0 left-0 right-0 z-[999] grid h-fit w-screen flex-shrink-0 flex-grow-0 grid-cols-frAutoFr content-center border-none border-border dark:border-border-dk bg-bg dark:bg-bg-dk"
+      className="sticky top-0 left-0 right-0 z-[999] grid h-fit w-screen flex-shrink-0 flex-grow-0 grid-cols-frAutoFr content-center border-none border-border dark:border-border-dk bg-bg dark:bg-bg-dk"
     >
       <div className=" col-start-2 ">
         <div
@@ -31,7 +31,7 @@ sm:w-body "
             rel="noreferrer"
           >
             <div className="flex flex-row overflow-clip rounded-lg border-none h-16 my-0 w-fit p-1">
-              <FullLogoWhiteColour/>
+              <FullLogoWhiteColour />
             </div>
           </a>
           <NavBar toggleColourTheme={toggleColourTheme} colourTheme={colourTheme} toggleMenu={toggleShowMenu} />

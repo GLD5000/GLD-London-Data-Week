@@ -2,7 +2,7 @@ import SvgButtonNew from '../../elements/SvgButtonNew';
 import HamburgerSvg from '../../icons/HamburgerSvg';
 import MoonSvg from '../../icons/MoonSvg';
 import SunSvg from '../../icons/SunSvg';
-import ExternalLink from './ExternalLink';
+import InternalLink from './InternalLink';
 
 function getDarkToggleIcon(isDark: boolean) {
   const wrapper = <div className=" text:inherit my-auto aspect-square h-6">{isDark ? <SunSvg /> : <MoonSvg />} </div>;
@@ -20,27 +20,27 @@ export default function NavBar({
 }) {
   return (
     <nav className="relative flex h-16 flex-wrap items-center justify-center gap-8 ">
-      <ExternalLink
+      <InternalLink
         mediaVisibility="hidden sm:flex"
-        link="https://gld-portfolio.vercel.app/"
+        link="#about-section"
         content={[
           <p key="text" className="m-0 hidden md:inline">
             ABOUT
           </p>,
         ]}
       />
-      <ExternalLink
+      <InternalLink
         mediaVisibility="hidden sm:flex"
-        link="https://www.linkedin.com/in/garethlouisdevlin/"
+        link="#schedule-section"
         content={[
           <p key="text" className="m-0 hidden md:inline">
             SCHEDULE
           </p>,
         ]}
       />
-      <ExternalLink
+      <InternalLink
         mediaVisibility="hidden sm:flex"
-        link="https://github.com/GLD5000"
+        link="#contact-section"
         content={[
           <p key="text" className="m-0 hidden md:inline">
             CONTACT

@@ -1,7 +1,7 @@
 import SvgButtonNew from '../../elements/SvgButtonNew';
 import MoonSvg from '../../icons/MoonSvg';
 import SunSvg from '../../icons/SunSvg';
-import ExternalLink from './ExternalLink';
+import InternalLink from './InternalLink';
 
 function getDarkToggleIcon(isDark: boolean) {
   const wrapper = <div className=" aspect-square h-6">{isDark ? <SunSvg /> : <MoonSvg />} </div>;
@@ -23,30 +23,30 @@ export default function HamburgerMenu({
         show ? 'flex' : ''
       } h-16 flex-wrap items-center justify-center gap-6 py-2`}
     >
-      <ExternalLink
+      <InternalLink
         layoutClasses="text-center flex flex-col w-16"
-        link="https://gld-portfolio.vercel.app/"
+        link="#about-section"
         content={[
           <p key="text" className="m-0 md:inline">
-            Portfolio
+            ABOUT
           </p>,
         ]}
       />
-      <ExternalLink
+      <InternalLink
         layoutClasses="text-center flex flex-col w-16"
-        link="https://www.linkedin.com/in/garethlouisdevlin/"
+        link="#schedule-section"
         content={[
           <p key="text" className="m-0 md:inline">
-            LinkedIn
+            SCHEDULE
           </p>,
         ]}
       />
-      <ExternalLink
+      <InternalLink
         layoutClasses="text-center flex flex-col w-16"
-        link="https://github.com/GLD5000"
+        link="#contact-section"
         content={[
           <p key="text" className="m-0 md:inline">
-            GitHub
+            CONTACT
           </p>,
         ]}
       />
