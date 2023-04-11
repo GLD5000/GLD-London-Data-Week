@@ -12,11 +12,15 @@ export default function useIntersectionObserver(
   }
 
   useEffect(() => {
+    let run = true;
     const { current } = elementRef;
     const observer = new IntersectionObserver(callback, options);
-    if (current !== null) observer.observe(current);
-
+    if (run) {
+      if (current !== null) observer.observe(current);
+      // if (current !== null) console.log('current.id:', current.id);;
+    }
     return () => {
+      run = false;
       if (current !== null) observer.unobserve(current);
     };
   }, [elementRef, onScreen, options]);
@@ -27,5 +31,5 @@ export default function useIntersectionObserver(
 useIntersectionObserver.defaultProps = {
   root: null,
   rootMargin: '0px',
-  threshold: 1,
+  threshold: [0.7, 0.8, 0.9, 1],
 };

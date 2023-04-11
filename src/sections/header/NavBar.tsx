@@ -2,6 +2,7 @@ import SvgButtonNew from '../../elements/SvgButtonNew';
 import HamburgerSvg from '../../icons/HamburgerSvg';
 import MoonSvg from '../../icons/MoonSvg';
 import SunSvg from '../../icons/SunSvg';
+import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
 import InternalLink from './InternalLink';
 
 function getDarkToggleIcon(isDark: boolean) {
@@ -18,13 +19,19 @@ export default function NavBar({
   toggleMenu: () => void;
   colourTheme: boolean;
 }) {
+  const { currentSection } = useIntersectionProviderContext();
+  console.log('currentSection:', currentSection);
+
   return (
     <nav className="relative flex h-16 flex-wrap items-center justify-center gap-8 ">
       <InternalLink
         mediaVisibility="hidden sm:flex"
         link="#about-section"
         content={[
-          <p key="text" className="m-0 hidden sm:inline">
+          <p
+            key="text"
+            className={`m-0 hidden sm:inline ${currentSection === 'about-section' ? 'text-lightblue' : ''}`}
+          >
             ABOUT
           </p>,
         ]}
@@ -33,7 +40,10 @@ export default function NavBar({
         mediaVisibility="hidden sm:flex"
         link="#schedule-section"
         content={[
-          <p key="text" className="m-0 hidden sm:inline">
+          <p
+            key="text"
+            className={`m-0 hidden sm:inline ${currentSection === 'schedule-section' ? 'text-lightblue' : ''}`}
+          >
             SCHEDULE
           </p>,
         ]}
@@ -42,7 +52,10 @@ export default function NavBar({
         mediaVisibility="hidden sm:flex"
         link="#contact-section"
         content={[
-          <p key="text" className="m-0 hidden sm:inline">
+          <p
+            key="text"
+            className={`m-0 hidden sm:inline ${currentSection === 'contact-section' ? 'text-lightblue' : ''}`}
+          >
             CONTACT
           </p>,
         ]}
