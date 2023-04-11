@@ -37,24 +37,24 @@ module.exports = {
         lightblue: '#00c8ba',
         white: '#ffffff',
 
+        'light-text-mid': '#32405d',
+
         'darkblue-bgvar': '#141a25',
         'darkblue-bg': '#1e2738',
 
-        'bg-var-dk': '#000000',
-        'bg-dk': '#1f1f1f',
+        'bg-var-dk': '#141a25',
+        'bg-dk': '#1e2738',
         'deco-dk': '#3d3d3d',
         'border-dk': '#6b6b6b',
-        'txt-low-dk': '#878787',
         'txt-mid-dk': '#ababab',
         'txt-main-dk': '#ffffff',
 
-        'txt-main': '#000000',
-        'txt-mid': '#474747',
-        'txt-low': '#636363',
+        'txt-main': '#1c2434',
+        'txt-mid': '#44587f',
         border: '#919191',
         deco: '#e0e0e0',
-        'bg-var': colors.palegrey,
-        bg: colors.white,
+        'bg-var': '#f1f1f2',
+        bg: 'ffffff',
       },
       boxShadow: {
         bottom: '1px 3px 0px -2px rgba(0, 0, 0, 1)',
