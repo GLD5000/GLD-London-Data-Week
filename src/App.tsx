@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div id="theme-wrapper" className={colourTheme ? 'dark' : undefined}>
-      <div className=" relative flex h-screen flex-col overflow-x-hidden overflow-y-scroll scroll-smooth border-border bg-bg text-txt-main dark:border-border-dk dark:bg-bg-dk dark:text-txt-main-dk ">
+      <div className=" relative flex h-screen flex-col overflow-x-hidden overflow-y-scroll snap-y snap-normal snap-proximity scroll-smooth border-border bg-bg text-txt-main dark:border-border-dk dark:bg-bg-dk dark:text-txt-main-dk ">
         <MainContentLink />
         <IntersectionProvider>
           <Header toggleColourTheme={toggleColourTheme} colourTheme={colourTheme} />

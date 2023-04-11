@@ -31,5 +31,6 @@ export default function useIntersectionObserver(
 useIntersectionObserver.defaultProps = {
   root: null,
   rootMargin: '0px',
-  threshold: [0.8, 0.85, 0.9, 0.95, 1],
+  threshold: [0.46, 0.48, 0.5, 0.52, 0.54],
 };
+// 0.6,0.65,0.7, 0.75, 0.8, 0.85, 0.9,

@@ -21,7 +21,7 @@ export default function Contact() {
     <section
       id="contact-section"
       ref={elementRef}
-      className="flex flex-col gap-10 min-h-screen scroll-m-32 sm:scroll-m-16"
+      className="flex flex-col gap-10 min-h-screen scroll-m-32 sm:scroll-m-16 snap-none"
     >
       <h2 className="text-4xl font-bold w-fit mx-auto">Get in Touch</h2>
       <div className=" bg-lightblue flex text-black w-full p-4 h-32  mr-auto font-bold">
