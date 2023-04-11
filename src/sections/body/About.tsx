@@ -19,7 +19,7 @@ export default function Hero() {
   }, [onScreen, elementRef, setcurrentSection]);
 
   return (
-    <section id="about-section" ref={elementRef} className="min-h-screen scroll-m-16">
+    <section id="about-section" ref={elementRef} className="min-h-screen scroll-m-32 sm:scroll-m-16">
       About
     </section>
   );

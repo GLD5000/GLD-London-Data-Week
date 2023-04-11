@@ -18,7 +18,7 @@ export default function Contact() {
   }, [onScreen, elementRef, setcurrentSection]);
 
   return (
-    <section id="contact-section" ref={elementRef} className="min-h-screen scroll-m-16">
+    <section id="contact-section" ref={elementRef} className="min-h-screen scroll-m-32 sm:scroll-m-16">
       Contact
     </section>
   );

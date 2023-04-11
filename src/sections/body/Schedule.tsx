@@ -18,7 +18,7 @@ export default function Schedule() {
   }, [onScreen, elementRef, setcurrentSection]);
 
   return (
-    <section id="schedule-section" ref={elementRef} className="min-h-screen scroll-m-16">
+    <section id="schedule-section" ref={elementRef} className="min-h-screen scroll-m-32 sm:scroll-m-16">
       Schedule
     </section>
   );

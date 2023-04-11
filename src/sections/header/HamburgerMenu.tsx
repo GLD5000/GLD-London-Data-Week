@@ -1,10 +1,11 @@
 import SvgButtonNew from '../../elements/SvgButtonNew';
 import MoonSvg from '../../icons/MoonSvg';
 import SunSvg from '../../icons/SunSvg';
+import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
 import InternalLink from './InternalLink';
 
 function getDarkToggleIcon(isDark: boolean) {
-  const wrapper = <div className=" aspect-square h-6">{isDark ? <SunSvg /> : <MoonSvg />} </div>;
+  const wrapper = <div className=" aspect-square my-auto h-6">{isDark ? <SunSvg /> : <MoonSvg />} </div>;
   return wrapper;
 }
 
@@ -17,6 +18,8 @@ export default function HamburgerMenu({
   colourTheme: boolean;
   show: boolean;
 }) {
+  const { currentSection } = useIntersectionProviderContext();
+
   return (
     <nav
       className={`relative ${show ? '' : 'hidden'} sm:hidden ${
@@ -24,28 +27,28 @@ export default function HamburgerMenu({
       } h-16 flex-wrap items-center justify-center gap-6 py-2`}
     >
       <InternalLink
-        layoutClasses="text-center flex flex-col w-16"
+        layoutClasses="text-center flex flex-col w-20"
         link="#about-section"
         content={[
-          <p key="text" className="m-0 md:inline">
+          <p key="text" className={`m-0  ${currentSection === 'about-section' ? 'text-lightblue' : ''}`}>
             ABOUT
           </p>,
         ]}
       />
       <InternalLink
-        layoutClasses="text-center flex flex-col w-16"
+        layoutClasses="text-center flex flex-col w-20"
         link="#schedule-section"
         content={[
-          <p key="text" className="m-0 md:inline">
+          <p key="text" className={`m-0  ${currentSection === 'schedule-section' ? 'text-lightblue' : ''}`}>
             SCHEDULE
           </p>,
         ]}
       />
       <InternalLink
-        layoutClasses="text-center flex flex-col w-16"
+        layoutClasses="text-center flex flex-col w-20"
         link="#contact-section"
         content={[
-          <p key="text" className="m-0 md:inline">
+          <p key="text" className={`m-0  ${currentSection === 'contact-section' ? 'text-lightblue' : ''}`}>
             CONTACT
           </p>,
         ]}
