@@ -30,6 +30,7 @@ sm:w-body "
             href="https://ldw-gld.vercel.app/"
             target="_blank"
             rel="noreferrer"
+            aria-label="Go To London Data Week Website"
           >
             <div className="flex flex-row overflow-clip rounded-lg border-none h-16 my-0 w-fit p-1">
               <FullLogoWhiteColour />
