@@ -37,6 +37,13 @@ module.exports = {
         lightblue: '#00c8ba',
         white: '#ffffff',
 
+        st0: '#00C8BA',
+        st1: '#FFFFFF',
+        st2: '#80D8D8',
+        st3: '#FFF170',
+        st4: '#FF89FE',
+        st5: '#1C2434',
+
         'light-text-mid': '#32405d',
 
         'darkblue-bgvar': '#141a25',

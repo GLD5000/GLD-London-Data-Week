@@ -25,7 +25,7 @@ export default function NavBar({
         link="https://gld-portfolio.vercel.app/"
         content={[
           <p key="text" className="m-0 hidden md:inline">
-            Portfolio
+            ABOUT
           </p>,
         ]}
       />
@@ -34,7 +34,7 @@ export default function NavBar({
         link="https://www.linkedin.com/in/garethlouisdevlin/"
         content={[
           <p key="text" className="m-0 hidden md:inline">
-            LinkedIn
+            SCHEDULE
           </p>,
         ]}
       />
@@ -43,7 +43,7 @@ export default function NavBar({
         link="https://github.com/GLD5000"
         content={[
           <p key="text" className="m-0 hidden md:inline">
-            GitHub
+            CONTACT
           </p>,
         ]}
       />
