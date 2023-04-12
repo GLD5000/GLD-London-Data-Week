@@ -24,18 +24,18 @@ export default function Hero() {
       ref={elementRef}
       className="relative min-h-screen scroll-m-32 sm:scroll-m-16 px-20 snap-start"
     >
-      <div className=" dark:bg-lightgreen bg-darkgreen dark:text-darkblue text-white w-fit py-12 px-20 mt-20 mr-auto font-bold">
+      <div className=" dark:bg-lightgreen bg-darkgreen text-darkblue w-fit py-12 px-20 mt-20 mr-auto font-bold">
         <p className=" text-6xl mb-4 mx-auto w-fit ">July 3-9</p>
         <p className=" text-2xl mr-auto w-fit">Join us for a free, city-wide</p>
         <p className=" text-2xl mr-auto w-fit">festival of data for everyone</p>
       </div>
       <div className="text-6xl">
         <p className="w-fit mx-auto mt-10">
-          <span className=" dark:text-lightgreen text-darkgreen font-bold">Data</span> in the{' '}
-          <span className=" dark:text-lightgreen text-darkgreen font-bold">public</span>,
+          <span className=" dark:text-lightgreen text-darkgreentxt font-bold">Data</span> in the{' '}
+          <span className=" dark:text-lightgreen text-darkgreentxt font-bold">public</span>,
         </p>
         <p className="w-fit mx-auto">
-          for the <span className=" dark:text-lightgreen text-darkgreen font-bold">public</span>.
+          for the <span className=" dark:text-lightgreen text-darkgreentxt font-bold">public</span>.
         </p>
       </div>
       <p className="w-fit mx-auto text-2xl mt-10">#LDW2023</p>

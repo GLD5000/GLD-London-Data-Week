@@ -32,7 +32,7 @@ export default function HamburgerMenu({
         content={[
           <p
             key="text"
-            className={`m-0  ${currentSection === 'about-section' ? 'dark:text-lightgreen text-darkgreen' : ''}`}
+            className={`m-0  ${currentSection === 'about-section' ? 'dark:text-lightgreen text-darkgreentxt' : ''}`}
           >
             ABOUT
           </p>,
@@ -44,7 +44,7 @@ export default function HamburgerMenu({
         content={[
           <p
             key="text"
-            className={`m-0  ${currentSection === 'schedule-section' ? 'dark:text-lightgreen text-darkgreen' : ''}`}
+            className={`m-0  ${currentSection === 'schedule-section' ? 'dark:text-lightgreen text-darkgreentxt' : ''}`}
           >
             SCHEDULE
           </p>,
@@ -56,7 +56,7 @@ export default function HamburgerMenu({
         content={[
           <p
             key="text"
-            className={`m-0  ${currentSection === 'contact-section' ? 'dark:text-lightgreen text-darkgreen' : ''}`}
+            className={`m-0  ${currentSection === 'contact-section' ? 'dark:text-lightgreen text-darkgreentxt' : ''}`}
           >
             CONTACT
           </p>,

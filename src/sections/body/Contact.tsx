@@ -24,10 +24,10 @@ export default function Contact() {
       className="flex flex-col gap-10 min-h-screen scroll-m-32 sm:scroll-m-16 snap-none"
     >
       <h2 className="text-4xl font-bold w-fit mx-auto">Get in Touch</h2>
-      <div className=" dark:bg-lightgreen bg-darkgreen flex text-white dark:text-black w-full p-4 h-32  mr-auto font-bold">
+      <div className=" dark:bg-lightgreen bg-darkgreen flex text-black w-full p-4 h-32  mr-auto font-bold">
         <p className=" text-2xl m-auto w-fit">To propose an event, submit your idea by 15 May 2023</p>
       </div>
-      <div className=" dark:bg-pink bg-darkpink flex text-white dark:text-black w-full p-4 h-32  mr-auto font-bold">
+      <div className=" dark:bg-pink bg-darkpink flex text-black w-full p-4 h-32  mr-auto font-bold">
         <p className=" text-2xl m-auto w-fit">
           For any other questions, email us at londondataweek@gmail.com or fill out the form below!
         </p>
