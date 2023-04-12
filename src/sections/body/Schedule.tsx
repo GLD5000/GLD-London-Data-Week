@@ -18,12 +18,12 @@ export default function Schedule() {
   const scrollRef = useRef<HTMLDivElement>(null);
   function scrollLeft() {
     if (scrollRef.current !== null) {
-      scrollRef.current.scrollLeft -= 720;
+      scrollRef.current.scrollLeft -= 500;
     }
   }
   function scrollRight() {
     if (scrollRef.current !== null) {
-      scrollRef.current.scrollLeft += 720;
+      scrollRef.current.scrollLeft += 500;
     }
   }
 
@@ -46,7 +46,7 @@ export default function Schedule() {
       className="min-h-screen scroll-m-32 sm:scroll-m-16 mt-20 snap-start"
     >
       <h2 className="text-4xl font-bold w-fit mx-auto">LDW 2023 Schedule</h2>
-      <div className="flex flex-row  py-10 border-4 mt-20 border-border dark:border-border-dk bg-darkblue text-white">
+      <div className="flex flex-row  py-10 border-4 mt-20 border-border dark:border-border-dk bg-lightgrey dark:bg-darkblue text-darkblue dark:text-white">
         <button
           aria-label="scroll-left"
           id="scroll-left"
@@ -60,7 +60,7 @@ export default function Schedule() {
         </button>
         <div
           ref={scrollRef}
-          className="flex flex-row snap-x snap-always scroll-smooth snap-start overflow-x-scroll w-full  gap-4 p-4"
+          className="flex flex-row snap-x snap-always scroll-smooth snap-start overflow-x-scroll w-full  bg-darkblue  gap-4 py-4 pl-4 pr-96"
         >
           {DayCards}
         </div>
