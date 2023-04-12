@@ -18,9 +18,9 @@ function objectifyTsv(tableData: string) {
 export default function eventData() {
   const dataTsv = `Name	Delivery Partner	Type of Event	Date	Location
     London Data Today & Tomorrow	GLA	Public Conversations	7/3/2023	City Hall
-    Cabaret of Dangerous Ideas	Turing,CoDI	Exhibits & Experiences	7/6/2023	Camden Club
     Statisticians for Society: Using stats to supercharge charities	RSS,Turing	Data Education	7/4/2023	RSS offices, Errol Street, EC1Y 8LX
-    GeoMob	GeoMob	Citizen Science	7/5/2023	Geovation Hub`;
+    GeoMob	GeoMob	Citizen Science	7/5/2023	Geovation Hub
+    Cabaret of Dangerous Ideas	Turing,CoDI	Exhibits & Experiences	7/6/2023	Camden Club`;
   const dataObject = objectifyTsv(dataTsv);
   return dataObject;
 }
