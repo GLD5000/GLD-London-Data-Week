@@ -28,7 +28,7 @@ export default function Hero() {
           <GroupLogoWhite />
         </div>
         <a
-          className="h-12 w-12 sm:h-20 sm:w-20 m-auto text-pink"
+          className="h-16 w-16 sm:h-20 sm:w-20 m-auto text-pink hover:transition hover:text-lightgreen focus-within:transition focus-within:text-lightgreen"
           href="#about-section"
           aria-label="scroll down"
           id="scroll-down"
