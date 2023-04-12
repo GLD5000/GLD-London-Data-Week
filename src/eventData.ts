@@ -1,6 +1,6 @@
 function objectifyTsv(tableData: string) {
   const [headerString, ...objectValueStrings] = tableData.split(/[\r\n]+/);
-  const objectKeys = headerString.split('\t');
+  const objectKeys = headerString.replaceAll(/[ ]/g, '').split('\t');
   const objectArray: Array<Record<string, string>> = [];
   objectValueStrings.forEach((objectValueString) => {
     const newObject: Record<string, string> = {};
@@ -22,6 +22,5 @@ export default function eventData() {
     Statisticians for Society: Using stats to supercharge charities	RSS,Turing	Data Education	7/4/2023	RSS offices, Errol Street, EC1Y 8LX
     GeoMob	GeoMob	Citizen Science	7/5/2023	Geovation Hub`;
   const dataObject = objectifyTsv(dataTsv);
-  console.log('dataObject:', dataObject);
   return dataObject;
 }

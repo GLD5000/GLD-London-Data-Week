@@ -1,16 +1,21 @@
 import { useEffect, useRef } from 'react';
 import useIntersectionObserver from '../../utilities/hooks/useIntersectionObserver';
 import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
-import EventCard from './EventCard';
 import RightArrowSvg from '../../icons/RightArrowSvg';
 import LeftArrowSvg from '../../icons/LeftArrowSvg';
 import eventData from '../../eventData';
+import DayCard from './DayCard';
+
+const dataArray = eventData();
+
+const DayCards = dataArray.map((event, index) => (
+  <DayCard key={`${event.Date}-${event.Name}`} colourIndex={index} eventsArray={[event]} />
+));
 
 export default function Schedule() {
   const { elementRef, onScreen } = useIntersectionObserver();
   const { setcurrentSection } = useIntersectionProviderContext();
   const scrollRef = useRef<HTMLDivElement>(null);
-  console.log('eventData:', eventData());
   function scrollLeft() {
     if (scrollRef.current !== null) {
       scrollRef.current.scrollLeft -= 720;
@@ -57,15 +62,7 @@ export default function Schedule() {
           ref={scrollRef}
           className="flex flex-row snap-x snap-always scroll-smooth snap-start overflow-x-scroll w-full  gap-4 p-4"
         >
-          <EventCard />
-          <EventCard />
-          <EventCard />
-          <EventCard />
-          <EventCard />
-          <EventCard />
-          <EventCard />
-          <EventCard />
-          <EventCard />
+          {DayCards}
         </div>
         <button
           aria-label="scroll-right"
