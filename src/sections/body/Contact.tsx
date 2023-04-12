@@ -33,11 +33,11 @@ export default function Contact() {
         </p>
       </div>
 
-      <form className="flex flex-col text-txt-main dark:text-txt-main-dk ">
+      <form className="flex flex-col  bg-palegrey dark:bg-white rounded-3xl text-darkblue p-4 gap-2 ">
         <input
           id="name-input"
           aria-label="name"
-          className=" h-16 w-full border-transparent border-2 border-b-border p-2 bg-transparent text-xl placeholder:text-txt-mid dark:placeholder:text-txt-mid-dk"
+          className=" h-16 w-full border-transparent border border-b-border p-2 bg-transparent text-xl placeholder:text-txt-mid dark:placeholder:text-txt-mid"
           type="text"
           placeholder="Name"
           autoComplete="off"
@@ -45,7 +45,7 @@ export default function Contact() {
         <input
           id="email-input"
           aria-label="email"
-          className=" h-16 w-full border-transparent border-2 border-b-border p-2 bg-transparent text-xl placeholder:text-txt-mid dark:placeholder:text-txt-mid-dk"
+          className=" h-16 w-full border-transparent border border-b-border p-2 bg-transparent text-xl placeholder:text-txt-mid dark:placeholder:text-txt-mid"
           type="text"
           placeholder="Email"
           autoComplete="off"
@@ -53,13 +53,13 @@ export default function Contact() {
         <textarea
           id="message-input"
           aria-label="message"
-          className=" w-full border-transparent border-2 border-b-border p-2 bg-transparent text-xl placeholder:text-txt-mid dark:placeholder:text-txt-mid-dk resize-y"
+          className=" w-full border-transparent border border-b-border p-2 bg-transparent text-xl placeholder:text-txt-mid dark:placeholder:text-txt-mid resize-y"
           placeholder="Message"
-          rows={7}
+          rows={4}
           wrap="hard"
         />
         <button
-          className="mt-8 border-border border-2 rounded-lg w-fit h-fit text-xl mx-auto px-4 py-2 font-bold"
+          className="mt-8 border-border border rounded-lg w-fit h-fit text-xl mx-auto px-4 py-2 font-bold text-white bg-darkblue hover:transition hover:text-darkblue hover:bg-white focus:transition focus:text-darkblue focus:bg-white"
           type="button"
         >
           Submit

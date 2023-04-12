@@ -1,6 +1,6 @@
 export default function DownArrowSvg({ classes = 'stroke-none fill-current ' }) {
   return (
-    <div className="pointer-events-none h-full w-full rounded-full bg-darkblue dark:bg-transparent p-2">
+    <div className="pointer-events-none h-full w-full rounded-full bg-darkblue-bg dark:bg-transparent p-2">
       <svg
         style={{
           strokeLinecap: 'round',

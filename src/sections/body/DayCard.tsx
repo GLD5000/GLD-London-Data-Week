@@ -16,7 +16,6 @@ export default function DayCard({
   const { Day, Date } = eventsArray[0];
   const [, dayOfMonth] = Date.split('/');
   const colour = getColour(colourIndex);
-  console.log('colour:', colour);
   const eventCards = eventsArray.map((event, index) => {
     const key = `${index}`;
     return <EventCard key={key} eventObject={event} />;
