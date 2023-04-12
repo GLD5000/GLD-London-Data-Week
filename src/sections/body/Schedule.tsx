@@ -4,11 +4,13 @@ import { useIntersectionProviderContext } from '../../utilities/contexts/Interse
 import EventCard from './EventCard';
 import RightArrowSvg from '../../icons/RightArrowSvg';
 import LeftArrowSvg from '../../icons/LeftArrowSvg';
+import eventData from '../../eventData';
 
 export default function Schedule() {
   const { elementRef, onScreen } = useIntersectionObserver();
   const { setcurrentSection } = useIntersectionProviderContext();
   const scrollRef = useRef<HTMLDivElement>(null);
+  console.log('eventData:', eventData());
   function scrollLeft() {
     if (scrollRef.current !== null) {
       scrollRef.current.scrollLeft -= 720;
