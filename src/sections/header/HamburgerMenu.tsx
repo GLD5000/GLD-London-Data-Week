@@ -30,7 +30,10 @@ export default function HamburgerMenu({
         layoutClasses="text-center flex flex-col w-20"
         link="#about-section"
         content={[
-          <p key="text" className={`m-0  ${currentSection === 'about-section' ? 'text-lightblue' : ''}`}>
+          <p
+            key="text"
+            className={`m-0  ${currentSection === 'about-section' ? 'dark:text-lightgreen text-darkgreen' : ''}`}
+          >
             ABOUT
           </p>,
         ]}
@@ -39,7 +42,10 @@ export default function HamburgerMenu({
         layoutClasses="text-center flex flex-col w-20"
         link="#schedule-section"
         content={[
-          <p key="text" className={`m-0  ${currentSection === 'schedule-section' ? 'text-lightblue' : ''}`}>
+          <p
+            key="text"
+            className={`m-0  ${currentSection === 'schedule-section' ? 'dark:text-lightgreen text-darkgreen' : ''}`}
+          >
             SCHEDULE
           </p>,
         ]}
@@ -48,7 +54,10 @@ export default function HamburgerMenu({
         layoutClasses="text-center flex flex-col w-20"
         link="#contact-section"
         content={[
-          <p key="text" className={`m-0  ${currentSection === 'contact-section' ? 'text-lightblue' : ''}`}>
+          <p
+            key="text"
+            className={`m-0  ${currentSection === 'contact-section' ? 'dark:text-lightgreen text-darkgreen' : ''}`}
+          >
             CONTACT
           </p>,
         ]}

@@ -35,9 +35,11 @@ module.exports = {
         palegrey: '#f1f1f2',
         pink: '#ff89fe',
         yellow: '#fff170',
+        lightgreen: '#00c8ba',
         darkblue: '#1c2434',
-        lightblue: '#00c8ba',
         white: '#ffffff',
+        darkgreen: '#107b74',
+        darkpink: '#c727c5',
 
         st0: '#00C8BA',
         st1: '#FFFFFF',

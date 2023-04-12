@@ -30,7 +30,9 @@ export default function NavBar({
         content={[
           <p
             key="text"
-            className={`m-0 hidden font-bold sm:inline ${currentSection === 'about-section' ? 'text-lightblue' : ''}`}
+            className={`m-0 hidden font-bold sm:inline ${
+              currentSection === 'about-section' ? 'dark:text-lightgreen text-darkgreen' : ''
+            }`}
           >
             ABOUT
           </p>,
@@ -43,7 +45,7 @@ export default function NavBar({
           <p
             key="text"
             className={`m-0 hidden font-bold sm:inline ${
-              currentSection === 'schedule-section' ? 'text-lightblue' : ''
+              currentSection === 'schedule-section' ? 'dark:text-lightgreen text-darkgreen' : ''
             }`}
           >
             SCHEDULE
@@ -56,7 +58,9 @@ export default function NavBar({
         content={[
           <p
             key="text"
-            className={`m-0 hidden font-bold sm:inline ${currentSection === 'contact-section' ? 'text-lightblue' : ''}`}
+            className={`m-0 hidden font-bold sm:inline ${
+              currentSection === 'contact-section' ? 'dark:text-lightgreen text-darkgreen' : ''
+            }`}
           >
             CONTACT
           </p>,

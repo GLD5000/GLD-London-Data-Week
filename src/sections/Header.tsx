@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import HamburgerMenu from './header/HamburgerMenu';
 import NavBar from './header/NavBar';
-import FullLogoWhiteColour from '../assets/FullLogoWhiteColour';
+import FullLogoMonochrome from '../assets/FullLogoMonochrome';
 
 export default function Header({
   toggleColourTheme,
@@ -31,7 +31,7 @@ sm:w-body "
             aria-label="Go To London Data Week Website"
           >
             <div className="flex flex-row overflow-clip rounded-lg border-none h-16 my-0 w-fit p-1">
-              <FullLogoWhiteColour />
+              <FullLogoMonochrome />
             </div>
           </a>
           <NavBar toggleColourTheme={toggleColourTheme} colourTheme={colourTheme} toggleMenu={toggleShowMenu} />
