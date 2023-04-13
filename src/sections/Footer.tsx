@@ -15,7 +15,7 @@ export default function Footer() {
         <img
           className="bg-darkblue dark:bg-transparent rounded-2xl"
           role="presentation"
-          src="src/assets/CorporateLogos.png"
+          src="./CorporateLogos.png"
           alt="corporate-logos"
         />
         <p key="text" className="m-0 w-fit mx-auto text-txt-mid dark:text-txt-mid-dk ">
