@@ -47,12 +47,14 @@ export default function Schedule() {
           aria-label="scroll-left"
           id="scroll-left"
           type="button"
-          className="p-2"
+          className="sm:p-2 p-1"
           onClick={() => {
             scrollLeft();
           }}
         >
-          <LeftArrowSvg />
+          <div className="h-6 w-6 sm:h-12 sm:w-12 hover:transition focus:transition rotate-180 hover:bg-white hover:text-black focus:bg-white focus:text-black rounded-full">
+            <LeftArrowSvg />
+          </div>
         </button>
         <div
           ref={scrollRef}
@@ -65,12 +67,14 @@ export default function Schedule() {
           aria-label="scroll-right"
           id="scroll-right"
           type="button"
-          className="p-2"
+          className="sm:p-2 p-1"
           onClick={() => {
             scrollRight();
           }}
         >
-          <RightArrowSvg />
+          <div className="h-6 w-6 sm:h-12 sm:w-12 hover:transition  focus:transition  hover:bg-white hover:text-black focus:bg-white focus:text-black rounded-full">
+            <RightArrowSvg />
+          </div>
         </button>
       </div>
     </section>

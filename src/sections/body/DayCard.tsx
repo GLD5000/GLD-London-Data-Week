@@ -24,7 +24,7 @@ export default function DayCard({
     <div
       className={`flex flex-col w-64 h-[30rem] shrink-0 gap-4 ${colour === 'yellow' ? 'bg-yellow' : ''}${
         colour === 'pink' ? 'bg-pink' : ''
-      }${colour === 'green' ? 'bg-lightgreen' : ''} p-4 snap-start scroll-m-4`}
+      }${colour === 'green' ? 'bg-lightgreen' : ''} p-4 snap-start sm:scroll-m-4`}
     >
       <div className="grid h-fit w-full bg-semiWhite text-black text-xl item font-bold p-4">
         <h2 className="w-fit h-fit m-auto text-4xl">{dayOfMonth}</h2>{' '}
