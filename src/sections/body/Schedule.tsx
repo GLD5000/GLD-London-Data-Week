@@ -16,14 +16,20 @@ export default function Schedule() {
   const { elementRef, onScreen } = useIntersectionObserver();
   const { setcurrentSection } = useIntersectionProviderContext();
   const scrollRef = useRef<HTMLDivElement>(null);
+
   function scrollLeft() {
+    const windowWidth = window.innerWidth;
+    const increment = windowWidth > 755 ? 500 : 250;
     if (scrollRef.current !== null) {
-      scrollRef.current.scrollLeft -= 500;
+      scrollRef.current.scrollLeft -= increment;
     }
   }
   function scrollRight() {
+    const windowWidth = window.innerWidth;
+    const increment = windowWidth > 755 ? 500 : 250;
+
     if (scrollRef.current !== null) {
-      scrollRef.current.scrollLeft += 500;
+      scrollRef.current.scrollLeft += increment;
     }
   }
 
