@@ -47,7 +47,7 @@ export default function Schedule() {
           aria-label="scroll-left"
           id="scroll-left"
           type="button"
-          className="sm:p-2 p-1"
+          className="sm:p-1 m-1"
           onClick={() => {
             scrollLeft();
           }}
