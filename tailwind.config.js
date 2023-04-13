@@ -31,6 +31,7 @@ module.exports = {
       },
       colors: {
         semiWhite: '#ffffff99',
+        semiBlue: '#1c2434bb',
 
         palegrey: '#f1f1f2',
         pink: '#ff89fe',
