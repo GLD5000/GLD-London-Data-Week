@@ -11,13 +11,13 @@ export default function Footer() {
         <h2 className="w-fit mx-auto text-4xl font-bold">London Data Week is made possible by</h2>
         <div className=" mx-auto w-3/5">
           <GroupLogoWhite />
+          <img
+            className="bg-darkblue dark:bg-transparent rounded-2xl"
+            role="presentation"
+            src="./CorporateLogos.png"
+            alt="corporate-logos"
+          />
         </div>
-        <img
-          className="bg-darkblue dark:bg-transparent rounded-2xl"
-          role="presentation"
-          src="./CorporateLogos.png"
-          alt="corporate-logos"
-        />
         <p key="text" className="m-0 w-fit mx-auto text-txt-mid dark:text-txt-mid-dk ">
           Design: London Data Week Team
         </p>
