@@ -40,13 +40,9 @@ export default function Schedule() {
   }, [onScreen, elementRef, setcurrentSection]);
 
   return (
-    <section
-      id="schedule-section"
-      ref={elementRef}
-      className="min-h-screen scroll-m-32 sm:scroll-m-16 mt-20 snap-start"
-    >
+    <section id="schedule-section" ref={elementRef} className="min-h-[90vh] scroll-m-32 mt-20 snap-start">
       <h2 className="text-4xl font-bold w-fit mx-auto">LDW 2023 Schedule</h2>
-      <div className="flex flex-row  py-4 border mt-20 border-border dark:border-border-dk bg-palegrey dark:bg-darkblue text-darkblue dark:text-white">
+      <div className="flex flex-row  py-4 border mt-20 border-current bg-palegrey dark:bg-darkblue text-darkblue dark:text-white">
         <button
           aria-label="scroll-left"
           id="scroll-left"

@@ -19,11 +19,7 @@ export default function Hero() {
   }, [onScreen, elementRef, setcurrentSection]);
 
   return (
-    <section
-      id="about-section"
-      ref={elementRef}
-      className="relative min-h-screen scroll-m-32 sm:scroll-m-16 px-20 snap-start"
-    >
+    <section id="about-section" ref={elementRef} className="relative min-h-[90vh] scroll-m-32 px-20 snap-start">
       <div className=" dark:bg-lightgreen bg-darkgreen text-darkblue w-fit py-12 px-20 mt-20 mr-auto font-bold">
         <p className=" text-6xl mb-4 mx-auto w-fit ">July 3-9</p>
         <p className=" text-2xl mr-auto w-fit">Join us for a free, city-wide</p>
