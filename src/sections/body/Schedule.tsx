@@ -60,9 +60,10 @@ export default function Schedule() {
         </button>
         <div
           ref={scrollRef}
-          className="flex flex-row snap-x snap-always scroll-smooth snap-start overflow-x-scroll w-full  bg-darkblue  gap-4 py-4 pl-4 pr-96"
+          className="flex flex-row snap-x snap-always snap-mandatory scroll-smooth snap-start overflow-x-scroll w-full  bg-darkblue  gap-4 p-4 dark:scrollbar-thumb-palegrey scrollbar-thumb-darkblue scrollbar-track-palegrey dark:scrollbar-track-transparent scrollbar-thin"
         >
           {DayCards}
+          <div className="w-full h-full shrink-0 snap-none" />
         </div>
         <button
           aria-label="scroll-right"
