@@ -22,7 +22,7 @@ module.exports = {
         body: '320px',
       },
       maxWidth: {
-        body: '1000px',
+        body: '1100px',
         'body-sm': '800px',
       },
       width: {
