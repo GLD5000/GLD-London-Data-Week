@@ -12,7 +12,7 @@ export default function EventCard({ eventObject }: { eventObject: Record<string,
       <button
         type="button"
         onClick={handleClick}
-        className=" grid items-center h-full w-full  bg-semiWhite text-black text-base"
+        className=" grid items-center h-full w-full  bg-semiWhite hover:transition hover:bg-white focus:transition focus:bg-white text-black text-base"
       >
         <h2 className="w-fit h-fit m-auto font-bold text-xl text-center">{Name.split(':')[0]}</h2>
         <div>
