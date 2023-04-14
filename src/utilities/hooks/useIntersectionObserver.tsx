@@ -1,7 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 
 export default function useIntersectionObserver(
-  options?: Partial<{ root: null | Element; rootMargin: string; threshold: number | number[] }>,
+  options: Partial<{ root: null | Element; rootMargin: string; threshold: number | number[] }> = {
+    root: null,
+    rootMargin: '0px 0px -50% 0px',
+    threshold: [0.25, 0.3, 0.4],
+  },
 ) {
   const elementRef = useRef<HTMLDivElement>(null);
   const [onScreen, setOnScreen] = useState(false);
@@ -17,7 +21,7 @@ export default function useIntersectionObserver(
     const observer = new IntersectionObserver(callback, options);
     if (run) {
       if (current !== null) observer.observe(current);
-      // if (current !== null) console.log('current.id:', current.id);;
+      if (current !== null) console.log(observer);
     }
     return () => {
       run = false;
@@ -28,9 +32,9 @@ export default function useIntersectionObserver(
   return { elementRef, onScreen };
 }
 
-useIntersectionObserver.defaultProps = {
-  root: null,
-  rootMargin: '0px',
-  threshold: [0.46, 0.48, 0.5, 0.52, 0.54],
-};
+// useIntersectionObserver.defaultProps = {
+//   root: null,
+//   rootMargin: '0px 0px -50% 0px',
+//   threshold: [0.46, 0.48, 0.5, 0.52, 0.54],
+// };
 // 0.6,0.65,0.7, 0.75, 0.8, 0.85, 0.9,
