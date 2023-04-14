@@ -4,7 +4,7 @@
 
 
 .fade-in {
-  animation: fadeInAnimation ease 7s;
+  animation: fadeInAnimation cubic-bezier(0.7, 0, 0.9, 0) 7s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
