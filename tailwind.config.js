@@ -19,7 +19,7 @@ module.exports = {
         autoFr: 'auto 1fr',
       },
       minWidth: {
-        body: '320px',
+        body: '300px',
       },
       maxWidth: {
         body: '1100px',
@@ -55,7 +55,7 @@ module.exports = {
         'darkblue-bg': '#1e2738',
 
         'bg-var-dk': '#141a25',
-        'bg-dk': '#1e2738',
+        'bg-dk': '#1c2434',
         'deco-dk': '#3d3d3d',
         'border-dk': '#6b6b6b',
         'txt-mid-dk': '#ababab',
