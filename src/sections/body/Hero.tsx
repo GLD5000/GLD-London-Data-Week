@@ -28,7 +28,7 @@ export default function Hero() {
     >
       <div className="h-fit grid gap-20">
         <FullLogoWhiteColour />
-        <div className=" ml-auto w-3/5">
+        <div className=" ml-auto md:w-3/5">
           <GroupLogoWhite />
         </div>
         <a
