@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 export default function useIntersectionObserver(
   options: Partial<{ root: null | Element; rootMargin: string; threshold: number | number[] }> = {
     root: null,
-    rootMargin: '0px 0px -50% 0px',
+    rootMargin: '-20% 0px -50% 0px',
     threshold: [0.25, 0.3, 0.4],
   },
 ) {
