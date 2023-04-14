@@ -46,7 +46,11 @@ export default function Schedule() {
   }, [onScreen, elementRef, setcurrentSection]);
 
   return (
-    <section id="schedule-section" ref={elementRef} className="min-h-[80vh] scroll-m-32 mt-20 snap-start">
+    <section
+      id="schedule-section"
+      ref={elementRef}
+      className="min-h-[80vh] scroll-m-32 mt-20 snap-start w-body-sm min-w-body max-w-body sm:w-body mx-auto"
+    >
       <h2 className="text-4xl font-bold w-fit mx-auto text-center">LDW 2023 Schedule</h2>
       <div className="flex flex-row  py-4 border mt-20 border-current bg-palegrey dark:bg-darkblue text-darkblue dark:text-white">
         <button
