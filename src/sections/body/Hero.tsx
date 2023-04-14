@@ -24,7 +24,7 @@ export default function Hero() {
     <section
       id="hero-section"
       ref={elementRef}
-      className="w-full min-h-[90vh] items-center p-4 sm:px-16 snap-start scroll-m-32"
+      className="w-full min-h-[80vh] items-center p-4 sm:px-16 snap-start scroll-m-32"
     >
       <div className="h-fit grid gap-20">
         <FullLogoWhiteColour />

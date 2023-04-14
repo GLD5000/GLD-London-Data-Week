@@ -22,7 +22,7 @@ export default function Hero() {
     <section
       id="about-section"
       ref={elementRef}
-      className="relative min-h-[90vh] scroll-m-32 sm:px-20 bg-transparent snap-start"
+      className="relative min-h-[80vh] scroll-m-32 sm:px-20 bg-transparent snap-start"
     >
       <div className=" -left-[3%] top-[7%] md:top-[27%] h-4 w-4 absolute bg-yellow hover:scale-150 hover:transition " />
       <div className=" left-[85%] top-[3%] md:top-[25%] h-5 w-5 absolute dark:bg-lightgreen bg-darkgreen hover:scale-150 hover:transition" />
