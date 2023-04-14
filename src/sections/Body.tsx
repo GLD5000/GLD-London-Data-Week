@@ -9,7 +9,7 @@ export default function Body() {
       id="main-content"
       className="relative grid w-screen grow grid-cols-frAutoFr content-between mt-16 py-10 sm:px-10"
     >
-      <div className=" col-start-2 bg-bg dark:bg-bg-dk p-2 rounded-3xl border-none border-border dark:border-border flex h-full w-body-sm min-w-body max-w-body flex-col gap-20 sm:w-body ">
+      <div className=" col-start-2 bg-bg dark:bg-bg-dk p-2 rounded-3xl border-none border-border dark:border-border flex h-full w-body-sm min-w-body max-w-body flex-col gap-16 sm:w-body ">
         <Hero />
         <About />
         <Schedule />

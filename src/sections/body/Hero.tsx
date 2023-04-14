@@ -21,18 +21,16 @@ export default function Hero() {
   }, [onScreen, elementRef, setcurrentSection]);
 
   return (
-    <section
-      id="hero-section"
-      ref={elementRef}
-      className="w-full min-h-[80vh] items-center p-4 sm:px-16 snap-start scroll-m-32"
-    >
-      <div className="h-fit grid gap-20">
-        <FullLogoWhiteColour />
-        <div className=" ml-auto md:w-3/5">
-          <GroupLogoWhite />
+    <section id="hero-section" ref={elementRef} className="w-full min-h-screen items-center sm:px-16 snap-start ">
+      <div className="flex h-full flex-col justify-between">
+        <div className="h-fit grid gap-20 mt-32">
+          <FullLogoWhiteColour />
+          <div className=" ml-auto md:w-3/5">
+            <GroupLogoWhite />
+          </div>
         </div>
         <a
-          className="h-16 w-16 sm:h-20 sm:w-20 m-auto text-pink hover:transition hover:text-lightgreen focus-within:transition focus-within:text-lightgreen"
+          className="h-12 w-12 mx-auto mt-auto mb-8 text-pink hover:transition hover:text-lightgreen focus-within:transition focus-within:text-lightgreen"
           href="#about-section"
           aria-label="scroll down"
           id="scroll-down"
