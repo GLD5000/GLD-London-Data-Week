@@ -36,7 +36,7 @@ export default function Hero() {
           </div>
         </div>
         <a
-          className="h-12 w-12 mx-auto mt-auto mb-8 text-pink hover:transition hover:text-lightgreen focus-within:transition focus-within:text-lightgreen"
+          className="h-12 w-12 mx-auto mt-auto mb-24 sm:mb-16 text-pink hover:transition hover:text-lightgreen focus-within:transition focus-within:text-lightgreen"
           href="#about-section"
           aria-label="scroll down"
           id="scroll-down"
