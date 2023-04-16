@@ -1,6 +1,6 @@
 export default function FullLogoMonochrome() {
   return (
-    <svg version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="181 104 862 298">
+    <svg id="logo-top" viewBox="181 104 862 298" height="100%" width="100%">
       <g>
         <g>
           <rect x="717.5" y="367.7" className="dark:fill-white fill-darkblue" width="31.7" height="32.2" />
