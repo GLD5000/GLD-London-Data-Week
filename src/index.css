@@ -17,3 +17,10 @@
     opacity: 1;
   }
 }
+
+.header-content { 
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
