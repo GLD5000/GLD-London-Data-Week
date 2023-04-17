@@ -24,6 +24,8 @@ export default function EventModal({ close, event }: { close: () => void; event:
   const [monthNumber, dayOfMonth, year] = Date.split('/');
   const monthName = lookupMonthName(Number(monthNumber));
   const initialFocus = useRef<HTMLButtonElement>(null);
+  const moreInfoNoHttp = MoreInfo.replace(/http[s]?:\/+/, '');
+  const moreInfoSlice = moreInfoNoHttp.length > 24 ? `${moreInfoNoHttp.slice(0, 24)}...` : moreInfoNoHttp;
 
   useEffect(() => {
     let run = true;
@@ -67,24 +69,24 @@ export default function EventModal({ close, event }: { close: () => void; event:
               <p className="w-fit mx-auto mt-2 font-bold text-xl">{Name.split(':')[1]}</p>
             ) : null}
           </div>
-
-          <p className="w-fit mx-auto my-2 text-xl">
-            <span className="font-bold">Organiser: </span>
-            {DeliveryPartner}
-          </p>
-          <p className="w-fit mx-auto my-2 text-xl">
-            <span className="font-bold">Location: </span>
-            {Location}
-          </p>
-          <p className="w-fit mx-auto my-2 text-xl">
-            <span className="font-bold">Date: </span>
-            {`${Day} ${dayOfMonth} ${monthName} ${year}`}
-          </p>
-          <p className="w-fit mx-auto my-2 text-xl">
-            <span className="font-bold">Time: </span>
-            {Time}
-          </p>
-          <p className="w-fit mx-auto mt-8 mb-2 text-xl">
+          <div className="w-fit mx-auto">
+            <p className=" my-2 text-xl">
+              <span className="font-bold">Organiser: </span>
+              {DeliveryPartner}
+            </p>
+            <p className=" my-2 text-xl">
+              <span className="font-bold">Location: </span>
+              {Location}
+            </p>
+            <p className=" my-2 text-xl">
+              <span className="font-bold">Date: </span>
+              {`${Day} ${dayOfMonth} ${monthName} ${year}`}
+            </p>
+            <p className=" my-2 text-xl">
+              <span className="font-bold">Time: </span>
+              {Time}
+            </p>
+            {/* <p className=" mt-8 mb-2 text-xl">
             <span className="font-bold">Registration: </span>
             <a
               onBlur={() => {
@@ -97,13 +99,22 @@ export default function EventModal({ close, event }: { close: () => void; event:
             >
               www.google.com
             </a>
-          </p>
-          <p className="w-fit mx-auto my-2 text-xl">
-            <span className="font-bold">More Info: </span>
-            <a target="_blank" rel="noreferrer" href={MoreInfo}>
-              {MoreInfo}
-            </a>
-          </p>
+          </p> */}
+            <p className=" m-2 text-xl mt-4">
+              <span className="font-bold">More Info: </span>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={MoreInfo}
+                onBlur={() => {
+                  console.log('blur');
+                  if (initialFocus.current != null) initialFocus.current.focus();
+                }}
+              >
+                {moreInfoSlice}
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
