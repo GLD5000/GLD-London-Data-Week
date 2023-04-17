@@ -22,19 +22,45 @@ export default function About() {
     <section
       id="about-section"
       ref={elementRef}
-      className="relative min-h-[80vh] scroll-m-32 sm:px-20 bg-transparent snap-start w-body-sm min-w-body max-w-body sm:w-body mx-auto"
+      className="relative min-h-[80vh] scroll-m-32 sm:px-32 bg-transparent snap-start w-body-sm min-w-body max-w-body sm:w-body mx-auto"
     >
-      <div className="text-xl w-80 mx-auto">
-        <div className="flex">
-          <p className="w-fit my-8">
+      <div className="grid text-xl w-full mx-auto">
+        <div className="flex flex-wrap w-full gap-20 ">
+          <p className="w-fit my-auto basis-0 grow">
             Data is part of our everyday lives as Londoners, from choosing the
             <span className=" dark:text-lightgreen text-darkgreentxt font-bold"> best Tube route</span> to finding your
             <span className=" dark:text-lightgreen text-darkgreentxt font-bold"> next pair of trainers</span>.
           </p>
+          <img
+            className="dark:block hidden max-w-[20rem] aspect-custom basis-0 grow"
+            role="presentation"
+            src="./illustrations/LDW-Data-Icons-Transparent_8.svg"
+            alt="corporate-logos"
+          />
+          <img
+            className="dark:hidden block w-80 max-w-[20rem] aspect-custom basis-0 grow "
+            role="presentation"
+            src="./illustrations/LDW-Dark_8.svg"
+            alt="corporate-logos"
+          />
         </div>
 
-        <div className="flex">
-          <p className="w-fit my-8">
+        <div className="flex flex-wrap w-full gap-20 ">
+          <img
+            className="dark:block hidden max-w-[20rem] aspect-custom basis-0 grow "
+            role="presentation"
+            src="./illustrations/LDW-Data-Icons-Transparent_3.svg"
+            alt="corporate-logos"
+          />
+
+          <img
+            className="dark:hidden block max-w-[20rem] aspect-custom basis-0 grow "
+            role="presentation"
+            src="./illustrations/LDW-Dark_3.svg"
+            alt="corporate-logos"
+          />
+
+          <p className="w-fit my-auto basis-0 grow">
             Join us at London Data Week for a citywide festival about data to
             <span className=" dark:text-yellow text-darkpink font-bold"> learn </span>,{' '}
             <span className=" dark:text-lightgreen text-darkgreentxt font-bold"> create</span>,
@@ -44,11 +70,23 @@ export default function About() {
           </p>
         </div>
 
-        <div className="flex">
-          <p className="w-fit my-8">
+        <div className="flex flex-wrap w-full gap-20 ">
+          <p className="w-fit my-auto basis-0 grow">
             Explore our schedule to discover workshops, comedy events, cycling challenges and more! More events to be
             announced in May 2023.
           </p>
+          <img
+            className="dark:hidden block max-w-[20rem] aspect-custom basis-0 grow "
+            role="presentation"
+            src="./illustrations/LDW-Dark_6.svg"
+            alt="corporate-logos"
+          />
+          <img
+            className="dark:block hidden max-w-[20rem] aspect-custom basis-0 grow "
+            role="presentation"
+            src="./illustrations/LDW-Data-Icons-Transparent_6.svg"
+            alt="corporate-logos"
+          />
         </div>
       </div>
     </section>

@@ -7,6 +7,9 @@ module.exports = {
       body: ['Poppins', 'Arial', 'sans-serif'],
     },
     extend: {
+      aspectRatio: {
+        custom: '10 / 8',
+      },
       screens: {
         xs: '420px',
       },
