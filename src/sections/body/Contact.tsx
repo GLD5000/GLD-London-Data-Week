@@ -24,7 +24,7 @@ export default function Contact() {
       className="flex flex-col gap-10 min-h-[80vh] scroll-m-32 snap-none lg:px-20 w-body-sm min-w-body max-w-body sm:w-body mx-auto"
     >
       <h2 className="text-4xl font-bold w-fit mx-auto">Get in Touch</h2>
-      <div className=" dark:bg-lightgreen bg-darkgreen flex text-black text-center w-full p-4 min-h-[8rem] overflow-x-auto mr-auto font-bold">
+      <div className=" dark:bg-lightgreen bg-darkgreen flex rounded-3xl text-black text-center w-full p-4 min-h-[8rem] overflow-x-auto mr-auto font-bold">
         <p className=" text-xl sm:text-xl m-auto w-fit">
           To propose an event,{' '}
           <a
@@ -38,7 +38,7 @@ export default function Contact() {
           by 15 May 2023
         </p>
       </div>
-      <div className=" dark:bg-pink bg-darkpink flex text-black text-center w-full p-4 min-h-[8rem] overflow-x-auto  mr-auto font-bold">
+      <div className=" dark:bg-pink bg-darkpink flex rounded-3xl text-black text-center w-full p-4 min-h-[8rem] overflow-x-auto  mr-auto font-bold">
         <p className=" text-xl sm:text-xl m-auto w-fit">
           For any other questions, email us at{' '}
           <a
