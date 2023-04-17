@@ -8,7 +8,9 @@ export default function Footer() {
         className=" grid gap-2 w-body-sm min-w-body  max-w-body flex-wrap items-center
                 sm:w-body "
       >
-        <h2 className="w-fit mx-auto text-4xl font-bold">London Data Week is made possible by</h2>
+        <h2 className="w-fit mx-auto text-xl md:text-4xl font-bold decoration text-txt-mid dark:text-txt-mid-dk">
+          London Data Week is made possible by:
+        </h2>
         <div className=" mx-auto w-3/5">
           <GroupLogoWhite />
           <img
