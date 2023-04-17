@@ -20,7 +20,7 @@ function lookupMonthName(number: number) {
 }
 
 export default function EventModal({ close, event }: { close: () => void; event: Record<string, string> }) {
-  const { Day, Date, Name, Location, DeliveryPartner, TypeofEvent } = event;
+  const { Day, Date, Name, Location, DeliveryPartner, MoreInfo, Time } = event;
   const [monthNumber, dayOfMonth, year] = Date.split('/');
   const monthName = lookupMonthName(Number(monthNumber));
   const initialFocus = useRef<HTMLButtonElement>(null);
@@ -81,7 +81,8 @@ export default function EventModal({ close, event }: { close: () => void; event:
             {`${Day} ${dayOfMonth} ${monthName} ${year}`}
           </p>
           <p className="w-fit mx-auto my-2 text-xl">
-            <span className="font-bold">Time: </span>3pm
+            <span className="font-bold">Time: </span>
+            {Time}
           </p>
           <p className="w-fit mx-auto mt-8 mb-2 text-xl">
             <span className="font-bold">Registration: </span>
@@ -99,7 +100,9 @@ export default function EventModal({ close, event }: { close: () => void; event:
           </p>
           <p className="w-fit mx-auto my-2 text-xl">
             <span className="font-bold">More Info: </span>
-            {TypeofEvent}
+            <a target="_blank" rel="noreferrer" href={MoreInfo}>
+              {MoreInfo}
+            </a>
           </p>
         </div>
       </div>
