@@ -28,8 +28,10 @@ export default function Hero() {
       className=" relative min-h-screen items-center sm:px-16 lg:snap-start w-body-sm min-w-body max-w-body sm:w-body mx-auto "
     >
       <div className="flex h-full flex-col justify-between">
-        <div className="h-fit grid gap-20 mt-32">
-          <AnimatedLogo />
+        <div className="h-fit grid gap-20 mt-32 ">
+          <div className="pr-[6.5%] bg-darkblue rounded-3xl overflow-clip">
+            <AnimatedLogo />
+          </div>
           {/* <FullLogoWhiteColour /> */}
           {/* <div className=" ml-auto md:w-3/5 fade-in">
             <GroupLogoWhite />
