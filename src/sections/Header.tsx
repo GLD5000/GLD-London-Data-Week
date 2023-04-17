@@ -18,7 +18,7 @@ export default function Header({
   return (
     <header
       id="top"
-      className="sticky top-0 left-0 right-0 z-[998] grid py-4 w-screen h-20 flex-shrink-0 flex-grow-0 grid-cols-frAutoFr content-center border-none border-border dark:border-border-dk bg-bg dark:bg-bg-dk"
+      className="sticky top-0 left-0 right-0 z-[998] grid py-3 w-screen h-fit grid-cols-frAutoFr content-center border-none border-border dark:border-border-dk bg-bg dark:bg-bg-dk"
     >
       <div className=" col-start-2 ">
         <div

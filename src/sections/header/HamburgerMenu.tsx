@@ -24,7 +24,7 @@ export default function HamburgerMenu({
     <nav
       className={`relative ${show ? '' : 'hidden'} sm:hidden ${
         show ? 'flex' : ''
-      } h-16 flex-wrap items-center justify-center gap-6 py-2`}
+      } h-10 flex-wrap items-center justify-center gap-6 py-2`}
     >
       <InternalLink
         layoutClasses="text-center flex flex-col w-20"
