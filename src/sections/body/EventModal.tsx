@@ -25,7 +25,7 @@ export default function EventModal({ close, event }: { close: () => void; event:
   const monthName = lookupMonthName(Number(monthNumber));
   const initialFocus = useRef<HTMLButtonElement>(null);
   const moreInfoNoHttp = MoreInfo.replace(/http[s]?:\/+/, '');
-  const moreInfoSlice = moreInfoNoHttp.length > 24 ? `${moreInfoNoHttp.slice(0, 24)}...` : moreInfoNoHttp;
+  const moreInfoSlice = moreInfoNoHttp.length > 20 ? `${moreInfoNoHttp.slice(0, 20)}...` : moreInfoNoHttp;
 
   useEffect(() => {
     let run = true;
@@ -43,7 +43,7 @@ export default function EventModal({ close, event }: { close: () => void; event:
       className="fixed top-0 left-0 m-auto bg-semiBlue h-screen w-screen z-[999] flex"
     >
       <div
-        className="relative sm:w-fit w-screen h-screen sm:h-fit bg-white text-darkblue m-auto p-12"
+        className="relative sm:w-fit w-screen h-screen sm:h-fit sm:rounded rounded-none bg-white text-darkblue m-auto p-12"
         // onClick={(e) => {
         //   e.stopPropagation();
         //   console.log('modal');
@@ -58,18 +58,18 @@ export default function EventModal({ close, event }: { close: () => void; event:
           onKeyDown={(e) => {
             if (e.key !== 'Tab') close();
           }}
-          className="w-10 h-10 bg-palegrey hover:transition text-darkblue focus:text-palegrey focus:transition focus:bg-darkblue hover:bg-darkblue hover:text-white rounded-full p-1 absolute top-2 right-2"
+          className="w-8 h-8 bg-palegrey hover:transition text-darkblue focus:text-palegrey focus:transition focus:bg-darkblue hover:bg-darkblue hover:text-white rounded-full p-1 absolute top-2 right-2"
         >
           <CloseSvg />
         </button>
         <div>
-          <div className="my-4 bg-lightgreen py-2 px-4">
+          <div className="my-4 rounded bg-lightgreen py-2 px-4">
             <p className="w-fit mx-auto text-3xl font-bold">{Name.split(':')[0]}</p>
             {Name.split(':')[1] !== undefined ? (
               <p className="w-fit mx-auto mt-2 font-bold text-xl">{Name.split(':')[1]}</p>
             ) : null}
           </div>
-          <div className="w-fit mx-auto">
+          <div className="w-fit mx-auto py-2 px-4">
             <p className=" my-2 text-xl">
               <span className="font-bold">Organiser: </span>
               {DeliveryPartner}
