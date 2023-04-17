@@ -29,7 +29,7 @@ export default function Hero() {
     >
       <div className="flex h-full flex-col justify-between">
         <div className="h-fit grid gap-20 mt-32 ">
-          <div className="pr-[6.5%] bg-darkblue rounded-3xl overflow-clip">
+          <div className="pr-[6.5%] bg-darkblue rounded-3xl overflow-clip py-6">
             <AnimatedLogo />
           </div>
           {/* <FullLogoWhiteColour /> */}
