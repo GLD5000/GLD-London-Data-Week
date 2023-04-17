@@ -25,7 +25,7 @@ export default function Hero() {
     <section
       id="hero-section"
       ref={elementRef}
-      className=" relative min-h-screen items-center sm:px-16 snap-start w-body-sm min-w-body max-w-body sm:w-body mx-auto "
+      className=" relative min-h-screen items-center sm:px-16 lg:snap-start w-body-sm min-w-body max-w-body sm:w-body mx-auto "
     >
       <div className="flex h-full flex-col justify-between">
         <div className="h-fit grid gap-20 mt-32">

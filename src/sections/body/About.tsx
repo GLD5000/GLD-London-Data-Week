@@ -22,10 +22,10 @@ export default function About() {
     <section
       id="about-section"
       ref={elementRef}
-      className="relative min-h-[80vh] scroll-m-32 lg:px-32 bg-transparent snap-start w-body-sm min-w-body max-w-body sm:w-body mx-auto"
+      className="relative min-h-[80vh] scroll-m-32 lg:px-32 bg-transparent lg:snap-start w-body-sm min-w-body max-w-body sm:w-body mx-auto"
     >
-      <div className="grid text-2xl w-full mx-auto">
-        <div className="flex flex-wrap w-full gap-20 ">
+      <div className="grid text-2xl w-full mx-auto gap-8">
+        <div className="flex flex-wrap w-full gap-8 ">
           <p className="w-fit my-auto basis-0 grow min-w-[20rem]">
             Data is part of our everyday lives as Londoners, from choosing the
             <span className=" dark:text-lightgreen text-darkgreentxt font-bold"> best Tube route</span> to finding your
@@ -45,7 +45,7 @@ export default function About() {
           />
         </div>
 
-        <div className="flex flex-wrap w-full gap-20 ">
+        <div className="flex flex-wrap w-full gap-8 ">
           <p className="w-fit my-auto basis-0 grow min-w-[20rem] lg:hidden">
             Join us at <b>London Data Week</b> for a citywide festival about data to
             <span className=" dark:text-yellow text-darkpink font-bold"> learn </span>,{' '}
@@ -79,7 +79,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="flex flex-wrap w-full gap-20 ">
+        <div className="flex flex-wrap w-full gap-8 ">
           <p className="w-fit my-auto basis-0 grow min-w-[20rem]">
             Explore our schedule to discover workshops, comedy events, cycling challenges and more! More events to be
             announced in May 2023.
