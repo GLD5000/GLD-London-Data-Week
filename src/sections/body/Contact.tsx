@@ -25,11 +25,29 @@ export default function Contact() {
     >
       <h2 className="text-4xl font-bold w-fit mx-auto">Get in Touch</h2>
       <div className=" dark:bg-lightgreen bg-darkgreen flex text-black text-center w-full p-4 min-h-[8rem] overflow-x-auto mr-auto font-bold">
-        <p className=" text-xl sm:text-2xl m-auto w-fit">To propose an event, submit your idea by 15 May 2023</p>
+        <p className=" text-xl sm:text-xl m-auto w-fit">
+          To propose an event,{' '}
+          <a
+            className="hover:transiton hover:decoration-current hover:decoration hover:underline"
+            target="_blank"
+            rel="noreferrer"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeTl1_ENeriBXLD_aeU9uQdsNZ8O46ErvvXJsVKNLAXNJ3YDw/viewform"
+          >
+            submit your idea
+          </a>{' '}
+          by 15 May 2023
+        </p>
       </div>
       <div className=" dark:bg-pink bg-darkpink flex text-black text-center w-full p-4 min-h-[8rem] overflow-x-auto  mr-auto font-bold">
-        <p className=" text-xl sm:text-2xl m-auto w-fit">
-          For any other questions, email us at londondataweek@gmail.com or fill out the form below!
+        <p className=" text-xl sm:text-xl m-auto w-fit">
+          For any other questions, email us at{' '}
+          <a
+            className="hover:transiton hover:decoration-current hover:decoration hover:underline"
+            href="mailto:londondataweek@gmail.com"
+          >
+            londondataweek@gmail.com
+          </a>{' '}
+          or fill out the form below!
         </p>
       </div>
 
