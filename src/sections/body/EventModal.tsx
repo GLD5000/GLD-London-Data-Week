@@ -100,8 +100,8 @@ export default function EventModal({ close, event }: { close: () => void; event:
               www.google.com
             </a>
           </p> */}
-            <p className=" m-2 text-xl mt-4">
-              <span className="font-bold">More Info: </span>
+            <p className=" text-xl mt-2">
+              <span className="font-bold m-0">More Info: </span>
               <a
                 target="_blank"
                 rel="noreferrer"
