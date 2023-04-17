@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 // import FullLogoWhiteColour from '../../assets/FullLogoWhiteColour';
-import GroupLogoWhite from '../../assets/GroupLogoWhite';
+// import GroupLogoWhite from '../../assets/GroupLogoWhite';
 import DownArrowSvg from '../../icons/DownArrowSvg';
 import useIntersectionObserver from '../../utilities/hooks/useIntersectionObserver';
 import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
@@ -31,8 +31,20 @@ export default function Hero() {
         <div className="h-fit grid gap-20 mt-32">
           <AnimatedLogo />
           {/* <FullLogoWhiteColour /> */}
-          <div className=" ml-auto md:w-3/5 fade-in">
+          {/* <div className=" ml-auto md:w-3/5 fade-in">
             <GroupLogoWhite />
+          </div> */}
+          <div className=" m-auto text-center w-full fade-in">
+            <p className=" text-3xl sm:text-6xl mb-6 mx-auto w-fit ">July 3-9</p>
+            <div className="text-3xl mx-auto text-center w-fit justify-center sm:text-6xl flex flex-row flex-wrap gap-2">
+              <p className="w-fit text-center">
+                <span className=" dark:text-lightgreen text-center text-darkgreentxt font-bold">Data</span> in the{' '}
+                <span className=" dark:text-lightgreen text-center text-darkgreentxt font-bold">public</span>,
+              </p>
+              <p className="w-fit text-center">
+                for the <span className=" dark:text-lightgreen text-darkgreentxt font-bold">public</span>.
+              </p>
+            </div>{' '}
           </div>
         </div>
         <a
