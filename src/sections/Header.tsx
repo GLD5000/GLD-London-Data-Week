@@ -11,6 +11,7 @@ export default function Header({
   colourTheme: boolean;
 }) {
   const [showMenu, setShowMenu] = useState(false);
+  const originURL = document.location.origin;
 
   function toggleShowMenu() {
     setShowMenu((state) => !state);
@@ -27,7 +28,7 @@ sm:w-body "
         >
           <a
             className="flex h-12 mr-auto my-auto ml-0 w-[7rem] flex-wrap items-center "
-            href="https://ldw-gld.vercel.app/"
+            href={originURL}
             aria-label="Go To London Data Week Website"
           >
             <div className="flex flex-row overflow-clip rounded-lg border-none h-12 my-0 mr-auto w-fit p-1">
