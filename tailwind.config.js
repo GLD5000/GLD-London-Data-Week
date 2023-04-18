@@ -22,7 +22,7 @@ module.exports = {
         autoFr: 'auto 1fr',
       },
       minWidth: {
-        body: '300px',
+        body: '280px',
       },
       maxWidth: {
         body: '1100px',
@@ -30,7 +30,7 @@ module.exports = {
       },
       width: {
         body: 'calc(100vw - 4rem)',
-        'body-sm': 'calc(100vw - 2rem)',
+        'body-sm': 'calc(100vw - 3rem)',
       },
       colors: {
         semiWhite: '#ffffff99',
