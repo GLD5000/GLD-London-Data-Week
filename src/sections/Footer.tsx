@@ -34,13 +34,62 @@ export default function Footer() {
             <AtiSvg />
           </a>
         </div>
-        <img
-          className="bg-darkblue dark:bg-transparent rounded-2xl w-full  max-w-[27rem] mx-auto"
-          role="presentation"
-          src="./CorporateLogos.png"
-          alt="corporate-logos"
-        />
-        <div className="grid gap-4 mb-6">
+        <div className=" relative flex flex-row flex-wrap mx-auto justify-center max-w-[45rem] h-fit w-full gap-2">
+          <a
+            className="w-fit h-16  mx-auto p-1 relative bg-darkblue rounded"
+            href="https://thegeomob.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className=" h-full w-fit  object-scale-down object-center "
+              role="presentation"
+              src="./geomob-logo.png"
+              alt="GeoMob Logo"
+            />
+          </a>
+          <a
+            className="w-fit h-16 mx-auto p-1 relative bg-white rounded"
+            href="https://www.cabaretofdangerousideas.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className=" w-fit h-full object-scale-down object-center  "
+              role="presentation"
+              src="./codi-logo.png"
+              alt="Cabaret of Dangerous Ideas Logo"
+            />
+          </a>
+          <a
+            className="w-fit h-16  mx-auto p-1 relative bg-white rounded"
+            href="https://www.newham.gov.uk/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className=" w-fit h-full object-scale-down object-center  "
+              role="presentation"
+              src="./Newham.svg"
+              alt="Newham London Logo"
+            />
+          </a>
+          <a
+            className="w-fit h-16  mx-auto p-1 relative bg-white rounded"
+            href="https://rss.org.uk/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className=" w-fit h-full object-scale-down object-center  "
+              role="presentation"
+              src="./RSS.svg"
+              alt="Royal Statistical Society Logo"
+            />
+          </a>
+        </div>
+
+        <div className="relative grid gap-4 mb-6">
           <p key="text" className="m-0 w-fit mx-auto text-txt-mid dark:text-txt-mid-dk ">
             Design: London Data Week Team
           </p>
@@ -54,7 +103,7 @@ export default function Footer() {
             }
           />
           <ExternalLink
-            layoutClasses="w-fit mx-auto"
+            layoutClasses="w-fit mx-auto my-2"
             link="https://gld-portfolio.vercel.app/"
             content={<GldSvg key="svg" />}
           />
