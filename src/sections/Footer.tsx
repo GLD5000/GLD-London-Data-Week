@@ -1,4 +1,5 @@
 import GroupLogoWhite from '../assets/GroupLogoWhite';
+import GldSvg from '../icons/GldSvg';
 import ExternalLink from './header/ExternalLink';
 
 export default function Footer() {
@@ -26,12 +27,17 @@ export default function Footer() {
           </p>
           <ExternalLink
             layoutClasses="w-fit mx-auto"
-            link="https://github.com/GLD5000"
+            link="https://gld-portfolio.vercel.app/"
             content={
               <p key="text" className="m-0 ">
                 Web Development: Gareth L Devlin
               </p>
             }
+          />
+          <ExternalLink
+            layoutClasses="w-fit mx-auto"
+            link="https://gld-portfolio.vercel.app/"
+            content={<GldSvg key="svg" />}
           />
         </div>
       </div>
