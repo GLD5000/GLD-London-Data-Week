@@ -1,6 +1,6 @@
 import SvgButtonNew from '../../elements/SvgButtonNew';
-import MoonSvg from '../../icons/MoonSvg';
-import SunSvg from '../../icons/SunSvg';
+import MoonSvg from '../../assets/icons/MoonSvg';
+import SunSvg from '../../assets/icons/SunSvg';
 import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
 import InternalLink from './InternalLink';
 
