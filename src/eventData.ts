@@ -12,12 +12,27 @@ function objectifyTsv(tableData: string) {
     newObject.Day = newDay;
     objectArray.push(newObject);
   });
-  return objectArray;
+  sortByDate(objectArray);
+  return sortByDate(objectArray);
+}
+
+function sortByDate(arrayOfObjects: Array<Record<string, string>>) {
+  const sortedArray: Array<Array<Record<string, string>>> = [];
+  arrayOfObjects.forEach((object) => {
+    const [month, day] = object.Date.split('/');
+    const number = Number(`${month}${day.padStart(2, '0')}`);
+    if (sortedArray[number] === undefined) sortedArray[number] = [];
+    sortedArray[number].push(object);
+  });
+  const sortedValues = Object.values(sortedArray);
+  return sortedValues;
 }
 
 export default function eventData() {
   const dataTsv = `Name	Organiser	Date	Time	EventType	MoreInfo	Location
   London Data Today & Tomorrow	GLA	7/3/2023	10:00 - 16:00	Public Conversations	https://www.eventbrite.com/e/london-data-week-2023-tickets-618137193987	City Hall
+  bondon Data Today & Tomorrow	GLA	7/3/2023	10:00 - 16:00	Public Conversations	https://www.eventbrite.com/e/london-data-week-2023-tickets-618137193987	City Hall
+  vondon Data Today & Tomorrow	GLA	7/3/2023	10:00 - 16:00	Public Conversations	https://www.eventbrite.com/e/london-data-week-2023-tickets-618137193987	City Hall
   Statisticians for Society: Using stats to supercharge charities	RSS	7/4/2023	10:00 - 16:00	Data Education	https://rss.org.uk/membership/volunteering-and-promoting/statisticians-for-society-initiative/	RSS offices, Errol Street, EC1Y 8LX
   GeoMob	GeoMob	7/5/2023	18:00	Public Conversations	https://thegeomob.com/post/july-5th-2023-geomoblon-details	Geovation Hub
   Cabaret of Dangerous Ideas	Turing,CoDI	7/6/2023	20:00 - 21:30	Exhibits & Experiences	https://www.eventsforce.net/turingevents/263/home	TBD

@@ -22,15 +22,16 @@ export default function DayCard({
   });
   return (
     <div
-      className={`flex flex-col w-64 h-[30rem] rounded shrink-0 gap-4 ${colour === 'yellow' ? 'bg-yellow' : ''}${
-        colour === 'pink' ? 'bg-pink' : ''
-      }${colour === 'green' ? 'bg-lightgreen' : ''} p-4 snap-start sm:scroll-m-4`}
+      className={`flex flex-col md:flex-row mx-auto w-full rounded shrink-0 gap-2 ${
+        colour === 'yellow' ? 'bg-yellow' : ''
+      }${colour === 'pink' ? 'bg-pink' : ''}${colour === 'green' ? 'bg-lightgreen' : ''} p-1`}
     >
-      <div className="grid h-fit w-full rounded bg-semiWhite text-black text-xl item font-bold p-4">
+      <div className="grid h-fit m-auto w-60 text-black text-xl font-bold">
         <h2 className="w-fit h-fit m-auto text-4xl">{dayOfMonth}</h2>{' '}
         <p className="w-fit h-fit m-auto text-3xl">{Day}</p>
       </div>
-      <div className="grid grid-rows-2 grow shrink-0 overflow-y-hidden gap-4">{eventCards}</div>
+
+      <div className="grid gap-1 grow">{eventCards}</div>
     </div>
   );
 }

@@ -16,11 +16,11 @@ function lookupMonthName(number: number) {
     'November',
     'December',
   ];
-  return lookupArray[number + 1];
+  return lookupArray[number - 1];
 }
 
 export default function EventModal({ close, event }: { close: () => void; event: Record<string, string> }) {
-  const { Day, Date, Name, Location, DeliveryPartner, MoreInfo, Time } = event;
+  const { Day, Date, Name, Location, Organiser, MoreInfo, Time, EventType } = event;
   const [monthNumber, dayOfMonth, year] = Date.split('/');
   const monthName = lookupMonthName(Number(monthNumber));
   const initialFocus = useRef<HTMLButtonElement>(null);
@@ -72,7 +72,11 @@ export default function EventModal({ close, event }: { close: () => void; event:
           <div className="w-fit mx-auto py-2 px-4">
             <p className=" my-2 text-xl">
               <span className="font-bold">Organiser: </span>
-              {DeliveryPartner}
+              {Organiser}
+            </p>{' '}
+            <p className=" my-2 text-xl">
+              <span className="font-bold">Type: </span>
+              {EventType}
             </p>
             <p className=" my-2 text-xl">
               <span className="font-bold">Location: </span>

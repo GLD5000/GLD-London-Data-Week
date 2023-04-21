@@ -23,7 +23,7 @@ export default function Contact() {
     <section
       id="contact-section"
       ref={elementRef}
-      className="flex flex-col gap-12 min-h-screen scroll-m-32 snap-none lg:px-20 w-body-sm min-w-body max-w-body sm:w-body mx-auto"
+      className="flex flex-col gap-12 min-h-screen pt-40 sm:pt-36 snap-none lg:px-20 w-body-sm min-w-body max-w-body sm:w-body mx-auto"
     >
       <h2 className="text-4xl font-bold w-fit mx-auto">Get in Touch</h2>
       <div className="flex flex-wrap w-full gap-12 sm:px-8">
