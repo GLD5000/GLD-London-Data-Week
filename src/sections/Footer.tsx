@@ -11,7 +11,7 @@ export default function Footer() {
         className=" relative grid gap-10 w-body-sm min-w-body  max-w-body items-center
                 sm:w-body "
       >
-        <h2 className="w-fit mx-auto mt-24 text-center text-lg md:text-2xl font-bold decoration text-txt-mid dark:text-txt-mid-dk">
+        <h2 className="w-fit mx-auto mt-24 text-center text-base md:text-lg font-bold decoration text-txt-mid dark:text-txt-mid-dk">
           London Data Week is made possible by:
         </h2>
         <div className=" relative flex flex-row mx-auto h-[20vw] items-center max-h-[5rem] w-fit max-w-[27rem] gap-6">
