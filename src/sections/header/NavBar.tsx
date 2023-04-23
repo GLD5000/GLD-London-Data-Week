@@ -4,6 +4,7 @@ import MoonSvg from '../../assets/icons/MoonSvg';
 import SunSvg from '../../assets/icons/SunSvg';
 import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
 import InternalLink from './InternalLink';
+import SmallNavButton from './SmallNavButton';
 
 function getDarkToggleIcon(isDark: boolean) {
   const wrapper = <div className=" text:inherit my-auto aspect-square h-6">{isDark ? <SunSvg /> : <MoonSvg />} </div>;
@@ -23,6 +24,7 @@ export default function NavBar({
 
   return (
     <nav className="relative flex h-16 flex-wrap items-center justify-center gap-8 ">
+      <SmallNavButton sectionString={currentSection} clickFunction={toggleMenu} />
       <InternalLink
         mediaVisibility="hidden sm:flex"
         link="#about-section"
