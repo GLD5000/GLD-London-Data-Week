@@ -25,7 +25,7 @@ module.exports = {
         body: '250px',
       },
       maxWidth: {
-        body: '1100px',
+        body: '1000px',
         'body-sm': '800px',
       },
       width: {
