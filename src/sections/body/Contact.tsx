@@ -28,7 +28,7 @@ export default function Contact() {
     >
       <h2 className="text-4xl font-bold w-fit mx-auto">Get in Touch</h2>
       <div className="flex flex-wrap max-w-[50rem] w-full mx-auto gap-6 justify-between ">
-        <div className=" dark:border-lightgreen border-2 border-darkgreen grid grid-rows-[auto_auto_1fr_auto] max-w-[24rem] mx-auto md:mx-0 basis-0 grow min-w-[18rem] rounded-xl text-current text-center px-1 py-4 md:p-4 gap-2 overflow-x-auto ">
+        <div className=" dark:border-lightgreen border-2 border-darkgreen grid grid-rows-[auto_auto_1fr_auto] max-w-[24rem] mx-auto md:mx-0 basis-0 grow min-w-[18rem] rounded-xl text-current text-center px-1 py-4 md:p-4 gap-4 overflow-x-auto ">
           <div className="h-24 w-24 mx-auto text-darkgreen dark:text-lightgreen">
             <LightBulb />
           </div>
@@ -43,7 +43,7 @@ export default function Contact() {
             <p className="w-fit h-fit mx-auto font-bold my-auto self-center text-lg sm:text-xl">Submit Idea</p>
           </a>
         </div>
-        <div className=" dark:border-pink border-2 border-darkpink grid grid-rows-[auto_auto_1fr_auto] max-w-[24rem] mx-auto md:mx-0 basis-0 grow min-w-[18rem] rounded-xl text-current text-center px-1 py-4 md:p-4 gap-2 overflow-x-auto  ">
+        <div className=" dark:border-pink border-2 border-darkpink grid grid-rows-[auto_auto_1fr_auto] max-w-[24rem] mx-auto md:mx-0 basis-0 grow min-w-[18rem] rounded-xl text-current text-center px-1 py-4 md:p-4 gap-4 overflow-x-auto  ">
           <div className="h-24 w-24 mx-auto text-darkpink dark:text-pink">
             <MailSvg />
           </div>
@@ -60,7 +60,7 @@ export default function Contact() {
       </div>
 
       <form
-        className="flex flex-col max-w-[50rem] min-w-[18rem] mx-auto w-full  border-2 dark:border-palegrey border-darkblue rounded-xl text-current p-4 gap-2"
+        className="flex flex-col max-w-[50rem] min-w-[18rem] mx-auto w-full  border-2 dark:border-palegrey border-darkblue rounded-xl text-current p-4 gap-4"
         action="https://formsubmit.co/londondataweek@gmail.com"
         method="POST"
       >
