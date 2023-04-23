@@ -24,7 +24,7 @@ function objectifyTsv(tableData: string) {
     const newObject: Record<string, string> = {};
     const valueArray = objectValueString.split('\t');
     valueArray.forEach((value, index) => {
-      newObject[`${objectKeys[index]}`] = value.trim();
+      newObject[`${objectKeys[index]}`] = value.trim().replaceAll(',', ', ').replaceAll(',  ', ', ');
     });
     const newDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(new Date(newObject.Date));
     newObject.dayName = newDay;
