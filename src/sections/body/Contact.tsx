@@ -28,14 +28,14 @@ export default function Contact() {
     >
       <h2 className="text-4xl font-bold w-fit mx-auto">Get in Touch</h2>
       <div className="flex flex-wrap max-w-[50rem] w-full mx-auto gap-6 justify-between ">
-        <div className=" dark:border-lightgreen border-4 border-darkgreen grid grid-rows-[auto_auto_1fr_auto] max-w-[24rem] mx-auto md:mx-0 basis-0 grow min-w-[18rem] rounded-3xl text-current text-center px-1 py-4 md:p-4 gap-2 overflow-x-auto ">
+        <div className=" dark:border-lightgreen border-2 border-darkgreen grid grid-rows-[auto_auto_1fr_auto] max-w-[24rem] mx-auto md:mx-0 basis-0 grow min-w-[18rem] rounded-xl text-current text-center px-1 py-4 md:p-4 gap-2 overflow-x-auto ">
           <div className="h-24 w-24 mx-auto text-darkgreen dark:text-lightgreen">
             <LightBulb />
           </div>
-          <h3 className="text-2xl font-bold">Get Involved</h3>
-          <p className=" text-base sm:text-lg mx-auto my-2 w-fit">Suggest an event before 15 May</p>
+          <h3 className="text-2xl mb-2 font-bold">Get Involved</h3>
+          <p className=" text-base sm:text-lg mx-auto w-fit">Suggest an event before 15 May</p>
           <a
-            className="hover:transiton hover:bg-darkblue dark:bg-lightgreen bg-darkgreen text-darkblue dark:hover:bg-white hover:text-white dark:hover:text-darkblue rounded-full w-60 max-w-[20rem] mx-auto mt-6 h-12 flex justify-center align-middle"
+            className="hover:transiton hover:bg-darkblue dark:bg-lightgreen bg-darkgreen text-darkblue dark:hover:bg-white hover:text-white dark:hover:text-darkblue rounded-full w-60 max-w-[20rem] mx-auto my-2 h-12 flex justify-center align-middle"
             target="_blank"
             rel="noreferrer"
             href="https://docs.google.com/forms/d/e/1FAIpQLSeTl1_ENeriBXLD_aeU9uQdsNZ8O46ErvvXJsVKNLAXNJ3YDw/viewform"
@@ -43,15 +43,15 @@ export default function Contact() {
             <p className="w-fit h-fit mx-auto font-bold my-auto self-center text-lg sm:text-xl">Submit Idea</p>
           </a>
         </div>
-        <div className=" dark:border-pink border-4 border-darkpink grid grid-rows-[auto_auto_1fr_auto] max-w-[24rem] mx-auto md:mx-0 basis-0 grow min-w-[18rem] rounded-3xl text-current text-center px-1 py-4 md:p-4 gap-2 overflow-x-auto  ">
+        <div className=" dark:border-pink border-2 border-darkpink grid grid-rows-[auto_auto_1fr_auto] max-w-[24rem] mx-auto md:mx-0 basis-0 grow min-w-[18rem] rounded-xl text-current text-center px-1 py-4 md:p-4 gap-2 overflow-x-auto  ">
           <div className="h-24 w-24 mx-auto text-darkpink dark:text-pink">
             <MailSvg />
           </div>
-          <h3 className="text-2xl font-bold">Ask a Question</h3>
+          <h3 className="text-2xl mb-2 font-bold">Ask a Question</h3>
 
-          <p className=" text-base sm:text-lg mx-auto my-2 w-fit">Email us or fill out the form below</p>
+          <p className=" text-base sm:text-lg mx-auto w-fit">Email us or fill out the form below</p>
           <a
-            className="hover:transiton hover:bg-darkblue dark:bg-pink bg-darkpink text-darkblue dark:hover:bg-white hover:text-white dark:hover:text-darkblue rounded-full w-60 max-w-[20rem] mx-auto mt-6 h-12 flex justify-center align-middle"
+            className="hover:transiton hover:bg-darkblue dark:bg-pink bg-darkpink text-darkblue dark:hover:bg-white hover:text-white dark:hover:text-darkblue rounded-full w-60 max-w-[20rem] mx-auto my-2 h-12 flex justify-center align-middle"
             href="mailto:londondataweek@gmail.com"
           >
             <p className="w-fit h-fit mx-auto font-bold my-auto self-center text-lg sm:text-xl">Email Us</p>
@@ -60,20 +60,20 @@ export default function Contact() {
       </div>
 
       <form
-        className="flex flex-col max-w-[50rem] min-w-[18rem] mx-auto w-full  border-4 dark:border-palegrey border-darkblue rounded-3xl text-current p-4 gap-2"
+        className="flex flex-col max-w-[50rem] min-w-[18rem] mx-auto w-full  border-2 dark:border-palegrey border-darkblue rounded-xl text-current p-4 gap-2"
         action="https://formsubmit.co/londondataweek@gmail.com"
         method="POST"
       >
         <div className="h-24 w-32 mx-auto text-darkblue dark:text-palegrey">
           <WritingSvg />
         </div>
-        <h3 className="text-2xl font-bold w-fit mx-auto">Send a Message</h3>
+        <h3 className="text-2xl mb-2 font-bold w-fit mx-auto">Send a Message</h3>
 
         <input
           id="name-input"
           name="name"
           aria-label="name"
-          className=" h-16 w-full border-transparent border border-b-darkblue dark:border-b-palegrey p-2 bg-transparent text-base sm:text-xl placeholder:text-current "
+          className=" h-16 w-full border-transparent border border-b-darkblue dark:border-b-palegrey p-2 bg-transparent text-base sm:text-lg placeholder:text-current "
           type="text"
           placeholder="Name"
           required
@@ -82,7 +82,7 @@ export default function Contact() {
           id="email-input"
           name="email"
           aria-label="email"
-          className=" h-16 w-full border-transparent border border-b-darkblue dark:border-b-palegrey p-2 bg-transparent text-base sm:text-xl placeholder:text-current "
+          className=" h-16 w-full border-transparent border border-b-darkblue dark:border-b-palegrey p-2 bg-transparent text-base sm:text-lg placeholder:text-current "
           type="email"
           placeholder="Email"
           required
@@ -92,7 +92,7 @@ export default function Contact() {
           id="message-input"
           name="message"
           aria-label="message"
-          className=" w-full border-transparent border border-b-darkblue dark:border-b-palegrey p-2 bg-transparent text-base sm:text-xl placeholder:text-current  resize-y"
+          className=" w-full border-transparent border border-b-darkblue dark:border-b-palegrey p-2 bg-transparent text-base sm:text-lg placeholder:text-current  resize-y"
           placeholder="Message"
           rows={5}
           wrap="hard"
