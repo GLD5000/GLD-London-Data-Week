@@ -19,10 +19,10 @@
 - Prettier & Eslint (with Airbnb style)
 - Husky & Lint-Staged
 
-## Made by Gareth L Devlin
+London Data Week Website 2023 Gareth L Devlin
+
+# [Original Repository](https://github.com/GLD5000/LDW-GLD)
+
+# [GLD5000 on GitHub](https://github.com/GLD5000)
 
 # [GLD Portfolio](https://gld-portfolio.vercel.app/)
-
-London Data Week Website Copyright (C) 2023 Gareth L Devlin
-
-### [License](https://github.com/GLD5000/LDW-GLD/blob/65d21b8ff480fa9a14bf86cc0ddaa4af7111f6f2/LICENSE.MD)
