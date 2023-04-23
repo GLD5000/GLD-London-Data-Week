@@ -9,6 +9,7 @@
   1. Light & Dark Colour Schemes
   2. Enhanced Colour contrast for readability (conforming to WCAG 2.1 guidelines)
   3. Keyboard accessible 'Skip to main content' link
+  4. Custom Modal with tab-trap
 - Search Engine Optimisation
 
 ## Made with:
