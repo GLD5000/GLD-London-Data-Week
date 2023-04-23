@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-// import FullLogoWhiteColour from '../../assets/FullLogoWhiteColour';
 import DownArrowSvg from '../../assets/icons/DownArrowSvg';
 import useIntersectionObserver from '../../utilities/hooks/useIntersectionObserver';
 import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
 import AnimatedLogo from '../../assets/logos/AnimatedLogo';
+// import FullLogoWhiteColour from '../../assets/logos/FullLogoWhiteColour';
 
 export default function Hero() {
   const { elementRef, onScreen } = useIntersectionObserver();
@@ -27,10 +27,15 @@ export default function Hero() {
       className=" absolute z-[997] bg-white dark:bg-darkblue top-0 grid min-h-screen w-screen "
     >
       <div className=" grid items-center grid-rows-[1fr_auto_auto_2fr_auto_1.2fr] sm:grid-rows-[1fr_auto_auto_2fr_auto] gap-4  w-body-sm min-w-body max-w-body sm:w-body mx-auto ">
-        <div className="pr-[6.5%] row-start-2 bg-darkblue rounded-3xl overflow-clip mx-auto max-w-[60rem] py-8">
+        <div className=" relative pr-[6.5%] row-start-2 bg-darkblue rounded-3xl overflow-clip mx-auto max-w-[60rem] py-8">
           <AnimatedLogo />
+          {/* <div className=" absolute top-0 right-0 left-0 bottom-0">
+            <div className="w-full h-full pr-[6.5%] cut-in m-1 px-1 mx-auto max-w-[60rem] py-8">
+              <FullLogoWhiteColour />
+            </div> 
+          </div> */}
         </div>
-        {/* <FullLogoWhiteColour /> */}
+
         <div className=" row-start-3 m-auto grid gap-4 md:gap-16 text-center w-full fade-in bg-white dark:bg-darkblue">
           <p className=" text-2xl xs:text-3xl md:text-5xl mx-auto w-fit font-bold ">July 3-9</p>
           <div className="text-2xl xs:text-3xl mx-auto text-center w-fit justify-center md:text-5xl flex flex-row flex-wrap gap-2">
