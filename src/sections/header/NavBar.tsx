@@ -15,16 +15,18 @@ export default function NavBar({
   toggleColourTheme,
   colourTheme,
   toggleMenu,
+  showHamburger,
 }: {
   toggleColourTheme: () => void;
   toggleMenu: () => void;
   colourTheme: boolean;
+  showHamburger: boolean;
 }) {
   const { currentSection } = useIntersectionProviderContext();
 
   return (
     <nav className="relative flex h-16 flex-wrap items-center justify-center gap-8 ">
-      <SmallNavButton sectionString={currentSection} clickFunction={toggleMenu} />
+      {showHamburger ? null : <SmallNavButton sectionString={currentSection} clickFunction={toggleMenu} />}
       <InternalLink
         mediaVisibility="hidden sm:flex"
         link="#about-section"

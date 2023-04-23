@@ -13,7 +13,7 @@ export default function SmallNavButton({
       type="button"
       onClick={clickFunction}
       key="text"
-      className={`m-0 font-bold block sm:hidden dark:text-lightgreen text-darkgreentxt `}
+      className={`m-0 text-sm block sm:hidden dark:text-lightgreen text-darkgreentxt `}
     >
       {content}
     </button>
