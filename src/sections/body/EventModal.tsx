@@ -48,24 +48,24 @@ export default function EventModal({
               <p className="w-fit mx-auto mt-2 font-bold text-xl">{Name.split(':')[1]}</p>
             ) : null}
           </div>
-          <div className="w-full mx-auto py-2 sm:px-8">
-            <p className=" sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
+          <div className="w-fit sm:w-full mx-auto py-2 sm:px-8">
+            <p className=" flex flex-row  flex-wrap gap-3 sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
               <span className="font-bold">Organiser: </span>
               {Organiser}
             </p>{' '}
-            <p className="sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
+            <p className="flex flex-row  flex-wrap gap-3 sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
               <span className="font-bold">Type: </span>
               {EventType}
             </p>
-            <p className="sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
+            <p className="flex flex-row  flex-wrap gap-3 sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
               <span className="font-bold">Location: </span>
               {Location}
             </p>
-            <p className="sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
+            <p className="flex flex-row  flex-wrap gap-3 sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
               <span className="font-bold">Date: </span>
               {`${dayName} ${dayNumber} ${monthName} ${yearNumber}`}
             </p>
-            <p className="sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
+            <p className="flex flex-row  flex-wrap gap-3 sm:grid sm:grid-cols-2 sm:mx-6 my-2 text-xl">
               <span className="font-bold">Time: </span>
               {Time}
             </p>
