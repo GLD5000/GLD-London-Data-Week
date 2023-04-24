@@ -11,7 +11,7 @@
 }
 
 .fade-in-fast {
-  animation: fadeInAnimation ease-in 280ms;
+  animation: 100ms fadeInAnimation ease-in 400ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }

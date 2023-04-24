@@ -24,9 +24,9 @@ export default function EventModal({
   return (
     <div
       id="modal-background"
-      className="fixed top-0 left-0 m-auto bg-darkblue sm:bg-semiBlue h-screen w-screen z-[999] flex"
+      className="fixed top-0 left-0 m-auto opacity-0 fade-in-fast bg-darkblue sm:bg-semiBlue h-screen w-screen z-[999] flex"
     >
-      <div className="relative fade-in-fast sm:w-fit w-screen h-screen sm:h-fit sm:rounded-3xl sm:border-2 sm:border-darkblue rounded-none bg-white text-darkblue m-auto py-12 px-6 sm:p-12">
+      <div className="relative  sm:w-fit w-screen h-screen sm:h-fit sm:rounded-3xl sm:border-2 sm:border-darkblue rounded-none bg-white text-darkblue m-auto py-12 px-6 sm:p-12">
         <button
           ref={initialFocus}
           id="close-btn"
