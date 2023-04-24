@@ -28,7 +28,7 @@ export default function About() {
       <h2 className="text-4xl font-bold w-fit mx-auto text-center mb-12">About LDW 2023</h2>
 
       <div className="grid text-base text-justify sm:text-xl w-full mx-auto gap-8">
-        <div className="grid md:grid-cols-2 w-full gap-8 ">
+        <div className="grid md:grid-cols-2 w-full md:gap-8 ">
           <p className="w-fit my-auto sm:p-4 basis-0 grow min-w-[15rem] sm:min-w-[20rem]">
             Data is part of our everyday lives as Londoners, from choosing the
             <span className=" dark:text-lightgreen text-darkgreentxt font-bold"> best Tube route</span> to finding your
@@ -73,7 +73,7 @@ export default function About() {
           />
         </div>
 
-        <div className="grid md:grid-cols-2 w-full gap-8 ">
+        <div className="grid md:grid-cols-2 w-full md:gap-8 ">
           <p className="w-fit my-auto sm:p-4 basis-0 grow min-w-[15rem] sm:min-w-[20rem]">
             Explore our schedule to discover workshops, comedy events, cycling challenges and more! More events to be
             announced in May 2023.
