@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import useIntersectionObserver from '../../utilities/hooks/useIntersectionObserver';
 import { useIntersectionProviderContext } from '../../utilities/contexts/IntersectionProvider';
-import eventData from '../../eventData';
+import eventData from '../../eventDataProcessor';
 import DayCard from './DayCard';
 
 const dataArray = eventData();
