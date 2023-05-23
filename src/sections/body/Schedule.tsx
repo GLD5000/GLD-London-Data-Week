@@ -4,7 +4,7 @@ import { useIntersectionProviderContext } from '../../utilities/contexts/Interse
 import eventData from '../../eventDataProcessor';
 import DayCard from './DayCard';
 
-const dataArray = eventData();
+const dataArray = await eventData();
 
 const DayCards = dataArray.map((event, index) => {
   const key = `${index}`;
