@@ -49,7 +49,7 @@ function sortByDate(arrayOfObjects: Array<Record<string, string>>) {
 }
 
 async function fetchData() {
-  const response = await fetch('src/ADDEVENTDATA/eventdata.tsv');
+  const response = await fetch('/ADDEVENTDATA/eventdata.tsv');
   const tsvData = await response.text();
 
   return objectifyTsv(tsvData.trim());
@@ -67,7 +67,10 @@ const hardData = `Name	Organiser	Date	Time	EventType	MoreInfo	Location
 export default async function eventData() {
   const dataObject = await fetchData();
   if (dataObject.length === 0) {
-    return objectifyTsv(hardData);
+    return getHardData();
   }
   return dataObject;
+}
+export function getHardData() {
+  return objectifyTsv(hardData);
 }
