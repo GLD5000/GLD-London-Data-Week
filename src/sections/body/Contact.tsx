@@ -24,10 +24,23 @@ export default function Contact() {
       ref={elementRef}
       className="flex flex-col gap-12 min-h-screen pt-40 sm:pt-36 snap-none lg:px-20 w-body-sm min-w-body max-w-body sm:w-body mx-auto"
     >
+      {/* <h2 className="text-4xl font-bold w-fit mx-auto text-center">Hear the Latest from Us</h2>
+      <div className="h-fit min-w-[240px] w-full border-darkpink dark:border-pink border-4 rounded-2xl max-w-[50rem] sm:mx-auto">
+        <a
+          className="twitter-timeline"
+          data-width="100%"
+          data-height="600"
+          data-theme="dark"
+          href="https://twitter.com/londondataweek?ref_src=twsrc%5Etfw"
+        >
+          Tweets by londondataweek
+        </a>
+      </div> */}
+
       <h2 className="text-4xl font-bold w-fit mx-auto">Get in Touch</h2>
 
       <form
-        className="flex flex-col max-w-[50rem] sm:min-w-[18rem] mx-auto w-full  border-2 dark:border-pink border-darkpink rounded-xl text-current py-4 px-2 sm:p-4 gap-4"
+        className="flex flex-col max-w-[50rem] sm:min-w-[18rem] mx-auto w-full  border-4 dark:border-pink border-darkpink rounded-xl text-current py-4 px-2 sm:p-4 gap-4"
         action="https://formsubmit.co/londondataweek@gmail.com"
         method="POST"
       >
