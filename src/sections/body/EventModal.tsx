@@ -31,7 +31,7 @@ export default function EventModal({
     <dialog
       ref={refPassed}
       id="event-modal"
-      className="relative sm:w-fit w-screen h-screen sm:h-fit rounded-3xl sm:border-2 sm:border-darkblue bg-white text-darkblue m-auto py-12 px-6 sm:p-12"
+      className="relative sm:w-fit w-screen h-fit rounded-3xl sm:border-2 sm:border-darkblue bg-white text-darkblue m-auto py-12 px-6 sm:p-12"
     >
       <button
         ref={initialFocus}
