@@ -5,7 +5,7 @@ const dataTsv = `Name	Organiser	Date	Time	EventType	MoreInfo	Location
   Cabaret of Dangerous Ideas	Turing,CoDI	7/6/2023	20:00 - 21:30	Exhibits & Experiences	https://www.eventsforce.net/turingevents/263/home	TBD
   Citi Map Data Collection Campaign	Citi Map	7/7/2023	All Day	Citizen Science	https://citimap.org/	TBD
   Citi Map Data Collection Campaign	Citi Map	7/8/2023	All Day	Citizen Science	https://citimap.org/	TBD
-  All the Docks	All the Docks	7/9/2023	All Day	Citizen Science	https://oobrien.com/2022/10/all-the-docks-how-it-went/	All over London`;
+  All the Docks	All the Docks	7/9/2023	All Day	Citizen Science	https://allthedocks.com/	All over London`;
 
 export default function getData() {
   return dataTsv.trim();
