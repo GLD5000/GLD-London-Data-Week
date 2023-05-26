@@ -12,7 +12,6 @@ module.exports = {
       },
       screens: {
         xs: '420px',
-        landscapeMobile: '900px',
       },
       gridTemplateColumns: {
         frAutoFr: '1fr auto 1fr',
