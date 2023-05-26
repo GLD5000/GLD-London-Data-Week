@@ -33,7 +33,7 @@ export default function Contact() {
             @LondonDataWeek Updates
           </h2>
           <div className="grid w-full h-fit p-2 bg-transparent">
-            <div className="bg-black rounded-t-none rounded-b-xl">
+            <div className="bg-black rounded-t-none rounded-b-xl text-center">
               <a
                 className="twitter-timeline"
                 data-width="100%"
