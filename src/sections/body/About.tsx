@@ -21,7 +21,7 @@ export default function About() {
 
   return (
     <section
-      id="about-section"
+      id="about"
       ref={elementRef}
       className="bg-gradient-to-t from-bg to-bg-var dark:bg-gradient-to-t dark:from-bg-dk dark:to-bg-var-dk relative w-screen min-h-[100vmax] pt-40 sm:pt-36  snap-start "
     >

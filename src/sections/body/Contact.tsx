@@ -21,7 +21,7 @@ export default function Contact() {
 
   return (
     <section
-      id="contact-section"
+      id="contact"
       ref={elementRef}
       className="w-screen bg-gradient-to-t from-bg to-bg-var dark:bg-gradient-to-t dark:from-bg-dk dark:to-bg-var-dk"
     >
